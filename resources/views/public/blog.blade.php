@@ -1,6 +1,6 @@
 <x-app page="blog" >
         <!-- start page title section -->
-        <section class="wow fadeIn cover-background background-position-top top-space" style="background-image:url('{{ asset('assets/images/examples/contact4.jpg') }}');">
+        <section class="wow fadeIn cover-background background-position-top top-space" style="background-image:url('{{ asset('assets/images/examples/blog2.jpg') }}');">
             <div class="opacity-medium bg-extra-dark-gray"></div>
             <div class="container">
                 <div class="row align-items-center">
