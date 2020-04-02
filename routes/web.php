@@ -15,10 +15,19 @@ use Illuminate\Support\Facades\Route;
 
 
 
-Route::get('/','HomeController@index');
+Route::get('/','HomeController@index')->name('home');
 Route::get('a-propos','HomeController@about');
 Route::get('services','HomeController@services');
 Route::get('portfolio','HomeController@portfolio');
 Route::get('contact','HomeController@contact');
 Route::get('blog','HomeController@blog');
 
+
+
+Route::get('admin', 'AdminController@index');
+Route::resource('admin/categories', 'Admin\\CategoriesController');
+Auth::routes();
+
+
+Route::resource('admin/tags', 'Admin\\TagsController');
+Route::resource('admin/posts', 'Admin\\PostsController');
