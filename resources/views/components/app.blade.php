@@ -52,9 +52,8 @@
         <![endif]-->
     </head>
     <body>
-    {{ $page }}
    
-    <x-header page="{{ $page }}"/>
+    <x-header :page="$page"/>
 
     <div id="app">
 

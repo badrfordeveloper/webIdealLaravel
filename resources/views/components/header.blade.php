@@ -33,6 +33,9 @@
                                 <li class="megamenu-fw">
                                     <a href="{{ url('contact') }}">Contact</a>
                                 </li>
+                                <li class="megamenu-fw">
+                                    <a href="{{ url('blog') }}">Blog</a>
+                                </li>
                                 <!-- start menu -->
                             </ul>
                         </div>

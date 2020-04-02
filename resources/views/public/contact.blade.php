@@ -1,7 +1,7 @@
 <x-app page="contact" >
 
-<!-- start page title section -->
-<section class="wow fadeIn cover-background background-position-top top-space" style="background-image:url('{{ asset('assets/images/examples/contact4.jpg') }}');">
+        <!-- start page title section -->
+        <section class="wow fadeIn cover-background background-position-top top-space" style="background-image:url('{{ asset('assets/images/examples/contact4.jpg') }}');">
             <div class="opacity-medium bg-extra-dark-gray"></div>
             <div class="container">
                 <div class="row align-items-center">

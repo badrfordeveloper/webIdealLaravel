@@ -20,4 +20,5 @@ Route::get('a-propos','HomeController@about');
 Route::get('services','HomeController@services');
 Route::get('portfolio','HomeController@portfolio');
 Route::get('contact','HomeController@contact');
+Route::get('blog','HomeController@blog');
 
