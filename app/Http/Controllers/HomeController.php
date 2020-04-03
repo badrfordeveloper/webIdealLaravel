@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Post;
+use App\Category;
+use App\Tag;
 
 class HomeController extends Controller
 {
@@ -31,6 +34,15 @@ class HomeController extends Controller
     }
     public function blog()
     {
-        return view('public.blog');
+        $keyword = request()->get('cat');
+        $perPage = 25;
+        if (!empty($keyword)) {
+            $posts = Category::where('libelle', '=', $keyword)->first()->posts;
+        } else {
+            $posts = Post::latest()->paginate($perPage);
+        }        
+        $categories = Category::all();
+        $tags = Tag::all();
+        return view('public.blog',compact('posts','categories','tags'));
     }
 }
