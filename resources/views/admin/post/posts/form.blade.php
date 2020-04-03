@@ -32,6 +32,41 @@
 </div>
 
 
+<div class="form-group {{ $errors->has('tag_id') ? 'has-error' : ''}}">
+    <label for="tag_id" class="control-label">{{ 'tags' }}</label>
+    <select  id="tag_id"  class="form-control" name="tags[]" multiple  style="width: 100%; height:150px;" size="10">
+
+        @forelse ( $tags as $tag)
+
+            <option 
+
+            @if(isset($tagsPost))
+
+                @forelse ( $tagsPost as $tagpost)
+                    @if(  $tag->id == $tagpost->tag_id)
+                        selected                    
+
+                    @endif
+                  
+                @empty
+                
+                @endforelse
+            @endif
+
+
+
+            value="{{ $tag->id }}">{{ $tag-> libelle}}</option>
+
+        @empty
+        @endforelse
+
+
+
+
+
+    </select>
+    {!! $errors->first('tag_id', '<p class="help-block">:message</p>') !!}
+</div>
 
 <div class="form-group">
     <input class="btn btn-primary" type="submit" value="{{ $formMode === 'edit' ? 'Update' : 'Create' }}">

@@ -31,3 +31,10 @@ Auth::routes();
 
 Route::resource('admin/tags', 'Admin\\TagsController');
 Route::resource('admin/posts', 'Admin\\PostsController');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+
+
+
