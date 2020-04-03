@@ -14,11 +14,10 @@ use Illuminate\Http\Request;
 
 class PostsController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\View\View
-     */
+    public function __construct()
+    {
+       $this->middleware('auth');
+    }
     public function index(Request $request)
     {
         $keyword = $request->get('search');
@@ -65,12 +64,6 @@ class PostsController extends Controller
         
         $requestData = array_merge($request->all(), ['user_id' => Auth::user()->id,'photo'=>$photo]);
 
-
-      /*  dd($request->post('tags'));*/
-        
-  
-        /*  dd( $post->id);
-*/
         if (  $post=Post::create($requestData)) {
                 foreach ($request->post('tags') as $mytag) {
         
@@ -116,7 +109,6 @@ class PostsController extends Controller
         $post = Post::findOrFail($id);
 
 
-
         return view('admin/post.posts.edit', compact('post','tags','tagsPost','categories'));
     }
 
@@ -140,7 +132,6 @@ class PostsController extends Controller
         }
                 
         $post = Post::findOrFail($id);
-      /*  $post->update($requestData);*/
 
         if (  $post->update($requestData)) {
 

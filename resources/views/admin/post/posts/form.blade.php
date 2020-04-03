@@ -3,6 +3,11 @@
     <input class="form-control" name="titre" type="text" id="titre" value="{{ isset($post->titre) ? $post->titre : ''}}" >
     {!! $errors->first('titre', '<p class="help-block">:message</p>') !!}
 </div>
+<div class="form-group {{ $errors->has('description') ? 'has-error' : ''}}">
+    <label for="description" class="control-label">{{ 'Description' }}</label>
+    <textarea class="form-control" rows="5" name="description" type="textarea" id="description" >{{ isset($post->description) ? $post->description : ''}}</textarea>
+    {!! $errors->first('description', '<p class="help-block">:message</p>') !!}
+</div>
 <div class="form-group {{ $errors->has('content') ? 'has-error' : ''}}">
     <label for="content" class="control-label">{{ 'Content' }}</label>
     <textarea class="form-control" rows="5" name="content" type="textarea" id="content" >{{ isset($post->content) ? $post->content : ''}}</textarea>
@@ -34,7 +39,7 @@
 
 <div class="form-group {{ $errors->has('tag_id') ? 'has-error' : ''}}">
     <label for="tag_id" class="control-label">{{ 'tags' }}</label>
-    <select  id="tag_id"  class="form-control" name="tags[]" multiple  style="width: 100%; height:150px;" size="10">
+    <select  id="tag_id"  class="js-example-basic-single js-states form-control" name="tags[]" multiple  style="width: 100%; height:150px;" size="10">
 
         @forelse ( $tags as $tag)
 

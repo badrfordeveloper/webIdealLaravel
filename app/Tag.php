@@ -27,5 +27,10 @@ class Tag extends Model
      */
     protected $fillable = ['libelle'];
 
+    public function postesTags()
+    {
+         return $this->hasMany('App\postesTags');
+    }
+
     
 }

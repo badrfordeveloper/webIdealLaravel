@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Post;
 use App\Category;
 use App\Tag;
+use App\postesTags;
 
 class HomeController extends Controller
 {
@@ -35,10 +36,43 @@ class HomeController extends Controller
     }
     public function blog()
     {
-        $keyword = request()->get('cat');
         $perPage = 25;
+
+        if(!empty(request()->get('cat')))
+        {
+            $keyword = request()->get('cat');$search="cat";
+        }
+        elseif (!empty(request()->get('tag'))) 
+        {
+            $keyword = request()->get('tag');$search="tag";
+        }
+        elseif (!empty(request()->get('search'))) 
+        {
+            $keyword = request()->get('search');$search="search";
+        }
+
+
         if (!empty($keyword)) {
-            $posts = Category::where('libelle', '=', $keyword)->first()->posts;
+            if($search == "cat")
+            {
+                $posts = Category::where('libelle', '=', $keyword)->first()->posts;
+            }
+            elseif ($search == "tag")
+            {
+                 $postesTags = Tag::where('libelle', '=', $keyword)->first()->postesTags;
+                 $posts = array();
+                 foreach ($postesTags as $item) 
+                 {
+                    $posts[] = postesTags::find($item->id)->post;
+                 }
+            }
+            else
+            {
+                $posts = Post::where('titre', 'LIKE', "%$keyword%")
+                ->orWhere('content', 'LIKE', "%$keyword%")
+                ->orWhere('description', 'LIKE', "%$keyword%")
+                ->latest()->paginate($perPage);
+            }
         } else {
             $posts = Post::latest()->paginate($perPage);
         }        

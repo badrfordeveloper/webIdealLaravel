@@ -31,7 +31,7 @@
                                 <div class="content margin-20px-bottom md-no-padding-left ">
                                     <a href="blog-standard-post.html" class="text-extra-dark-gray margin-5px-bottom alt-font text-extra-large font-weight-600 d-inline-block">{{ $post->titre }}</a>
                                     <div class="text-medium-gray text-extra-small margin-15px-bottom text-uppercase alt-font"><span>{{ date('Y-m-d', strtotime($post->created_at)) }}</span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="blog-grid.html" class="text-medium-gray">{{ $post->categorie->libelle }}</a></div>
-                                    <p class="m-0 width-95">{!! $post->content !!}</p>
+                                    <p class="m-0 width-95">{{ substr($post->description,0,155).'...' }}</p>
                                 </div>
                                 <a class="btn btn-very-small btn-dark-gray text-uppercase" href="blog-standard-post.html">Voir Plus</a>
                             </div>
@@ -44,9 +44,9 @@
                     </main>
                     <aside class="col-12 col-lg-3">
                         <div class="d-inline-block width-100 margin-45px-bottom sm-margin-25px-bottom">
-                            <form>
+                            <form method="get" action="{{ url('blog')}}">
                                 <div class="position-relative">
-                                    <input type="text" class="bg-transparent text-small m-0 border-color-extra-light-gray medium-input float-left" placeholder="Chercher...">
+                                    <input type="text" name="search" class="bg-transparent text-small m-0 border-color-extra-light-gray medium-input float-left" value="{{ request()->get('search') }}" placeholder="Chercher...">
                                     <button type="submit" class="bg-transparent  btn position-absolute right-0 top-1"><i class="fas fa-search ml-0"></i></button>
                                 </div>   
                             </form>

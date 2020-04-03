@@ -32,6 +32,9 @@
                                         <th> Titre </th><td> {{ $post->titre }} </td>
                                     </tr>
                                     <tr>
+                                        <th> Description </th><td> {{ $post->description }} </td>
+                                    </tr>
+                                    <tr>
                                         <th> Content </th><td> {!! $post->content !!} </td>
                                     </tr>
                                     

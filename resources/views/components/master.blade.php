@@ -13,6 +13,7 @@
     <!-- Styles -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css" rel="stylesheet" />
 </head>
 <body>
     <div id="app">
@@ -74,8 +75,12 @@
     <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
     <script type="text/javascript" src="{{ asset('assets/js/jquery.js') }}"></script>
     <script type="text/javascript" src="{{ asset('assets/js/bootstrap.bundle.js') }}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.min.js"></script>
 
     <script>
+      $('.js-example-basic-single').select2({
+        placeholder: 'Selectionnez ...'
+      });
     tinymce.init({
       selector: '#content',
       height: 300,

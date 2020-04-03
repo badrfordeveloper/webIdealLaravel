@@ -25,7 +25,7 @@ class Post extends Model
      *
      * @var array
      */
-    protected $fillable = ['titre', 'content', 'photo', 'categorie_id', 'user_id'];
+    protected $fillable = ['titre', 'content', 'description', 'photo', 'categorie_id', 'user_id'];
 
     public function user()
     {
@@ -34,6 +34,10 @@ class Post extends Model
     public function categorie()
     {
         return $this->belongsTo('App\Category');
+    }
+    public function postesTags()
+    {
+         return $this->hasMany('App\postesTags');
     }
     
 }

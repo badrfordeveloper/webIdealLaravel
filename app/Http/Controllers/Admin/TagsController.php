@@ -10,11 +10,10 @@ use Illuminate\Http\Request;
 
 class TagsController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\View\View
-     */
+    public function __construct()
+    {
+       $this->middleware('auth');
+    }
     public function index(Request $request)
     {
         $keyword = $request->get('search');

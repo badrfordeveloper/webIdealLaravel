@@ -27,7 +27,7 @@
                             <table class="table">
                                 <thead>
                                     <tr>
-                                        <th>#</th><th>Photo</th><th>Titre</th><th>Content</th><th>Date</th><th>Actions</th>
+                                        <th>#</th><th>Photo</th><th>Titre</th><th>Description</th><th>Date</th><th>Actions</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -36,7 +36,7 @@
                                         <td>{{ $loop->iteration }}</td>
                                         <td><img height="50px;" src="@if($item->photo) {{asset('storage/'.$item->photo)}} @else {{asset('assets/images/default.png')}} @endif" alt="{{ $item->titre }}"></td>
                                         <td>{{ $item->titre }}</td>
-                                        <td>{!! $item->content !!}</td>
+                                        <td>{{ substr($item->description,0,50).'...' }}</td>
                                         <td>{{ $item->created_at }}</td>
                                         <td>
                                             <a href="{{ url('/admin/posts/' . $item->id) }}" title="View Post"><button class="btn btn-info btn-sm"><i class="fa fa-eye" aria-hidden="true"></i> View</button></a>
