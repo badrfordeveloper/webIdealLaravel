@@ -8,6 +8,8 @@ use Auth;
 
 use App\Post;
 use App\Category;
+use App\Tag;
+use App\postesTags;
 use Illuminate\Http\Request;
 
 class PostsController extends Controller
@@ -41,7 +43,9 @@ class PostsController extends Controller
     public function create()
     {
         $categories = Category::all();
-        return view('admin/post.posts.create',compact('categories'));
+        $tags = Tag::all();
+
+        return view('admin/post.posts.create',compact('categories','tags'));
     }
 
     /**
@@ -60,8 +64,24 @@ class PostsController extends Controller
         }
         
         $requestData = array_merge($request->all(), ['user_id' => Auth::user()->id,'photo'=>$photo]);
+
+
+      /*  dd($request->post('tags'));*/
         
-        Post::create($requestData);
+  
+        /*  dd( $post->id);
+*/
+        if (  $post=Post::create($requestData)) {
+                foreach ($request->post('tags') as $mytag) {
+        
+                $tag =new postesTags();
+                $tag->post_id = $post->id;
+                $tag->tag_id = $mytag;
+                $tag->save();
+                }
+               
+            }
+
 
         return redirect('admin/posts')->with('flash_message', 'Post added!');
     }
@@ -90,9 +110,14 @@ class PostsController extends Controller
     public function edit($id)
     {
         $categories = Category::all();
+        $tags = Tag::all();
+        $tagsPost=postesTags::where('post_id',$id)->get();
+       
         $post = Post::findOrFail($id);
 
-        return view('admin/post.posts.edit', compact('post','categories'));
+
+
+        return view('admin/post.posts.edit', compact('post','tags','tagsPost','categories'));
     }
 
     /**
@@ -115,7 +140,24 @@ class PostsController extends Controller
         }
                 
         $post = Post::findOrFail($id);
-        $post->update($requestData);
+      /*  $post->update($requestData);*/
+
+        if (  $post->update($requestData)) {
+
+            // delete oldest
+             $tagsPost=postesTags::where('post_id',$id)->get();
+             foreach ($tagsPost as $tagPost) {
+                 postesTags::destroy($tagPost->id);
+             }
+
+
+                foreach ($request->post('tags') as $mytag) {
+                    $tag =new postesTags();
+                    $tag->post_id = $post->id;
+                    $tag->tag_id = $mytag;
+                    $tag->save();
+                }
+        }
 
         return redirect('admin/posts')->with('flash_message', 'Post updated!');
     }
@@ -130,6 +172,7 @@ class PostsController extends Controller
     public function destroy($id)
     {
         Post::destroy($id);
+        
 
         return redirect('admin/posts')->with('flash_message', 'Post deleted!');
     }
