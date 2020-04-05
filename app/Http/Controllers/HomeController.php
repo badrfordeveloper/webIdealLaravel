@@ -7,6 +7,8 @@ use App\Post;
 use App\Category;
 use App\Tag;
 use App\postesTags;
+use Carbon\Carbon;
+
 
 class HomeController extends Controller
 {
@@ -50,6 +52,10 @@ class HomeController extends Controller
         {
             $keyword = request()->get('search');$search="search";
         }
+        elseif (!empty(request()->get('date'))) 
+        {
+            $keyword = request()->get('date');$search="date";
+        }
 
 
         if (!empty($keyword)) {
@@ -66,6 +72,13 @@ class HomeController extends Controller
                     $posts[] = postesTags::find($item->id)->post;
                  }
             }
+            elseif ($search == "date")
+            {
+                $date = explode("-", $keyword);
+                $year = $date[0];
+                $month = $date[1];
+                $posts = Post::whereYear('created_at', '=', $year)->whereMonth('created_at', '=', $month)->latest()->paginate($perPage);
+            }
             else
             {
                 $posts = Post::where('titre', 'LIKE', "%$keyword%")
@@ -79,5 +92,12 @@ class HomeController extends Controller
         $categories = Category::all();
         $tags = Tag::all();
         return view('public.blog',compact('posts','categories','tags'));
+    }
+
+    public function detailArticle($id,$titre)
+    {
+        $post = Post::where('id', '=', $id)->where("titre","=",$titre)->firstOrFail();
+
+         return view('public.detail',compact('post'));
     }
 }
