@@ -6,7 +6,7 @@
                     <!-- start revolution slider 5.4.1 fullwidth mode -->
                     <div id="rev_slider_1078_1" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.4.1">
                         <ul><!-- slide  -->
-                        <li data-index="rs-3" data-transition="fade" data-slotamount="3" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="500"  data-thumb="http://placehold.it/60x60"  data-rotate="0"  data-saveperformance="off"  data-title="" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+                        <li data-index="rs-3" data-transition="fade" data-slotamount="3" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="500"  data-thumb="{{ asset('assets/images/slides/img3.jpg') }}"  data-rotate="0"  data-saveperformance="off"  data-title="" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
                                 <div class="opacity-extra-medium bg-black position-relative z-index-1"></div>
                                 <!-- main image -->
                                 <img src="{{ asset('assets/images/slides/img3.jpg') }}"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="1" class="rev-slidebg" data-no-retina>
@@ -79,7 +79,7 @@
                                    data-basealign="slide">Nos Services</a>
                                 <!-- layer nr. 6 -->
                             </li>
-                            <li data-index="rs-3045" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="200"  data-thumb="http://placehold.it/100x50"  data-rotate="0"  data-fstransition="fade" data-fsmasterspeed="100" data-fsslotamount="0" data-saveperformance="off"  data-title="" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+                            <li data-index="rs-3045" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="200"  data-thumb="{{ asset('assets/images/slides/img1.jpg') }}"  data-rotate="0"  data-fstransition="fade" data-fsmasterspeed="100" data-fsslotamount="0" data-saveperformance="off"  data-title="" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
                                 <div class="opacity-extra-medium bg-black position-relative z-index-1"></div>
                                 <!-- main image -->
                                 <img src="{{ asset('assets/images/slides/img1.jpg') }}"  alt="Ocean"  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="1" class="rev-slidebg">
@@ -143,7 +143,7 @@
                                 <!-- LAYER NR. 6 -->
                             </li>
                             <!-- slide  -->
-                            <li data-index="rs-2" data-transition="fade" data-slotamount="3" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="500"  data-thumb="http://placehold.it/60x60"  data-rotate="0"  data-saveperformance="off"  data-title="" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+                            <li data-index="rs-2" data-transition="fade" data-slotamount="3" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="500"  data-thumb="{{ asset('assets/images/slides/img2.jpg') }}"  data-rotate="0"  data-saveperformance="off"  data-title="" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
                                 <div class="opacity-extra-medium bg-black position-relative z-index-1"></div>
                                 <!-- main image -->
                                 <img src="{{ asset('assets/images/slides/img2.jpg') }}"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="1" class="rev-slidebg" data-no-retina>
