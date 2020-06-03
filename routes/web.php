@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Spatie\Sitemap\SitemapGenerator;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -16,6 +18,14 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/','HomeController@index')->name('home');
+Route::get('sitemap',function (){
+	set_time_limit(300);
+
+
+	//SitemapGenerator::create('https://example.com')->getSitemap()->writeToDisk('public', 'sitemap.xml');
+	SitemapGenerator::create('https://websites-ideal.com/')->writeToFile('sitemap.xml');
+	return "sitemap created !";
+});
 Route::get('a-propos','HomeController@about');
 Route::get('services','HomeController@services');
 Route::get('portfolio','HomeController@portfolio');
