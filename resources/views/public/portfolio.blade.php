@@ -43,13 +43,13 @@
                                 <!-- start portfolio item -->
                                 <li class="grid-item catalogue wow zoomIn portflioShadow">
                                     <figure>
-                                        <div class="portfolio-img bg-black"><img src="{{ asset('assets/images/portfolio/imageportfoliocatalogue1.png') }}" alt=""/></div>
+                                        <div class="portfolio-img bg-black"><img src="{{ asset('assets/images/portfolio/imageportfoliocatalogue1.jpg') }}" alt=""/></div>
                                         <figcaption>
                                             <div class="portfolio-hover-main">
                                                 <div class="portfolio-hover-box align-middle">
                                                     <div class="portfolio-icon">
                                                         <!--<a href="single-project-page-01.html"><i class="fas fa-link" aria-hidden="true"></i></a>-->
-                                                        <a class="gallery-link" title="IMAGE TITLE" href="{{ asset('assets/images/portfolio/imageportfoliocatalogue1.png') }}"><i class="fas fa-search" aria-hidden="true"></i></a>
+                                                        <a class="gallery-link" title="IMAGE TITLE" href="{{ asset('assets/images/portfolio/imageportfoliocatalogue1.jpg') }}"><i class="fas fa-search" aria-hidden="true"></i></a>
                                                     </div>
                                                     <div class="portfolio-hover-content">
                                                         <span class="font-weight-600 line-height-normal alt-font text-white-2 text-uppercase margin-5px-bottom d-block">Herbal Beauty Salon</span>
@@ -64,13 +64,13 @@
                                 <!-- start portfolio item -->
                                 <li class="grid-item vitrine wow zoomIn portflioShadow" data-wow-delay="0.2s">
                                     <figure>
-                                        <div  class="portfolio-img bg-black"><img src="{{ asset('assets/images/portfolio/imageportfoliositevitrine4.png') }}" alt=""/></div>
+                                        <div  class="portfolio-img bg-black"><img src="{{ asset('assets/images/portfolio/imageportfoliositevitrine4.jpg') }}" alt=""/></div>
                                         <figcaption>
                                             <div class="portfolio-hover-main">
                                                 <div class="portfolio-hover-box align-middle">
                                                     <div class="portfolio-icon">
                                                         <!-- <a href="single-project-page-02.html"><i class="fas fa-link" aria-hidden="true"></i></a>  -->
-                                                        <a class="gallery-link" title="IMAGE TITLE" href="{{ asset('assets/images/portfolio/imageportfoliositevitrine4.png') }}"><i class="fas fa-search" aria-hidden="true"></i></a>  
+                                                        <a class="gallery-link" title="IMAGE TITLE" href="{{ asset('assets/images/portfolio/imageportfoliositevitrine4.jpg') }}"><i class="fas fa-search" aria-hidden="true"></i></a>  
                                                     </div>
                                                     <div class="portfolio-hover-content">
                                                         <span class="font-weight-600 line-height-normal alt-font text-white-2 text-uppercase margin-5px-bottom d-block">Tailoring Interior</span>
@@ -85,13 +85,13 @@
                                 <!-- start portfolio item -->
                                 <li class="grid-item vitrine  wow zoomIn portflioShadow" data-wow-delay="0.4s">
                                     <figure>
-                                        <div  class="portfolio-img bg-black"><img src="{{ asset('assets/images/portfolio/imageportfoliositevitrine3.png') }}" alt=""/></div>
+                                        <div  class="portfolio-img bg-black"><img src="{{ asset('assets/images/portfolio/imageportfoliositevitrine3.jpg') }}" alt=""/></div>
                                         <figcaption>
                                             <div class="portfolio-hover-main">
                                                 <div class="portfolio-hover-box align-middle">
                                                     <div class="portfolio-icon">                
                                                        <!--  <a href="single-project-page-03.html"><i class="fas fa-link" aria-hidden="true"></i></a>  -->
-                                                        <a class="gallery-link" title="IMAGE TITLE" href="{{ asset('assets/images/portfolio/imageportfoliositevitrine3.png') }}"><i class="fas fa-search" aria-hidden="true"></i></a>   
+                                                        <a class="gallery-link" title="IMAGE TITLE" href="{{ asset('assets/images/portfolio/imageportfoliositevitrine3.jpg') }}"><i class="fas fa-search" aria-hidden="true"></i></a>   
                                                     </div>
                                                     <div class="portfolio-hover-content">
                                                         <span class="font-weight-600 line-height-normal alt-font text-white-2 text-uppercase margin-5px-bottom d-block">Designblast Inc</span>
@@ -106,13 +106,13 @@
                                 <!-- start portfolio item -->
                                 <li class="grid-item application grid-item-double wow zoomIn portflioShadow">
                                     <figure>
-                                        <div  class="portfolio-img bg-black"><img src="{{ asset('assets/images/portfolio/imageportfoliocommandeenligne.png') }}" alt=""/></div>
+                                        <div  class="portfolio-img bg-black"><img src="{{ asset('assets/images/portfolio/imageportfoliocommandeenligne.jpg') }}" alt=""/></div>
                                         <figcaption>
                                             <div class="portfolio-hover-main">
                                                 <div class="portfolio-hover-box align-middle">
                                                     <div class="portfolio-icon">         
                                                        <!--  <a href="single-project-page-04.html"><i class="fas fa-link" aria-hidden="true"></i></a>   -->    
-                                                        <a class="gallery-link" title="IMAGE TITLE" href="{{ asset('assets/images/portfolio/imageportfoliocommandeenligne.png') }}"><i class="fas fa-search" aria-hidden="true"></i></a>   
+                                                        <a class="gallery-link" title="IMAGE TITLE" href="{{ asset('assets/images/portfolio/imageportfoliocommandeenligne.jpg') }}"><i class="fas fa-search" aria-hidden="true"></i></a>   
                                                     </div>
                                                     <div class="portfolio-hover-content">
                                                         <span class="font-weight-600 line-height-normal alt-font text-white-2 text-uppercase margin-5px-bottom d-block">HardDot Stone</span>
@@ -127,13 +127,13 @@
                                 <!-- start portfolio item -->
                                 <li class="grid-item vitrine wow zoomIn portflioShadow" data-wow-delay="0.2s">
                                     <figure>
-                                        <div  class="portfolio-img bg-black"><img src="{{ asset('assets/images/portfolio/imageportfoliositevitrine2.png') }}" alt=""/></div>
+                                        <div  class="portfolio-img bg-black"><img src="{{ asset('assets/images/portfolio/imageportfoliositevitrine2.jpg') }}" alt=""/></div>
                                         <figcaption>
                                             <div class="portfolio-hover-main">
                                                 <div class="portfolio-hover-box align-middle">
                                                     <div class="portfolio-icon">                              
                                                         <!-- <a href="single-project-page-05.html"><i class="fas fa-link" aria-hidden="true"></i></a>  -->  
-                                                        <a class="gallery-link" title="IMAGE TITLE" href="{{ asset('assets/images/portfolio/imageportfoliositevitrine2.png') }}"><i class="fas fa-search" aria-hidden="true"></i></a>   
+                                                        <a class="gallery-link" title="IMAGE TITLE" href="{{ asset('assets/images/portfolio/imageportfoliositevitrine2.jpg') }}"><i class="fas fa-search" aria-hidden="true"></i></a>   
                                                     </div>
                                                     <div class="portfolio-hover-content">
                                                         <span class="font-weight-600 line-height-normal alt-font text-white-2 text-uppercase margin-5px-bottom d-block">Crop Identity</span>
@@ -148,13 +148,13 @@
                                 <!-- start portfolio item -->
                                 <li class="grid-item ecommerce wow zoomIn portflioShadow">
                                     <figure>
-                                        <div  class="portfolio-img bg-black"><img src="{{ asset('assets/images/portfolio/imageportfolioecommerce3.png') }}" alt=""/></div>
+                                        <div  class="portfolio-img bg-black"><img src="{{ asset('assets/images/portfolio/imageportfolioecommerce3.jpg') }}" alt=""/></div>
                                         <figcaption>
                                             <div class="portfolio-hover-main">
                                                 <div class="portfolio-hover-box align-middle">
                                                     <div class="portfolio-icon">                            
                                                         <!--<a href="single-project-page-01.html"><i class="fas fa-link" aria-hidden="true"></i></a>-->     
-                                                        <a class="gallery-link" title="IMAGE TITLE" href="{{ asset('assets/images/portfolio/imageportfolioecommerce3.png') }}"><i class="fas fa-search" aria-hidden="true"></i></a>  
+                                                        <a class="gallery-link" title="IMAGE TITLE" href="{{ asset('assets/images/portfolio/imageportfolioecommerce3.jpg') }}"><i class="fas fa-search" aria-hidden="true"></i></a>  
                                                     </div>
                                                     <div class="portfolio-hover-content">
                                                         <span class="font-weight-600 line-height-normal alt-font text-white-2 text-uppercase margin-5px-bottom d-block">Violator Series</span>
@@ -169,13 +169,13 @@
                                 <!-- start portfolio item -->
                                 <li class="grid-item ecommerce wow zoomIn portflioShadow" data-wow-delay="0.4s">
                                     <figure>
-                                        <div  class="portfolio-img bg-black"><img src="{{ asset('assets/images/portfolio/imageportfolioecommerce1.png') }}" alt=""/></div>
+                                        <div  class="portfolio-img bg-black"><img src="{{ asset('assets/images/portfolio/imageportfolioecommerce1.jpg') }}" alt=""/></div>
                                         <figcaption>
                                             <div class="portfolio-hover-main">
                                                 <div class="portfolio-hover-box align-middle">
                                                     <div class="portfolio-icon">                                           
                                                         <!-- <a href="single-project-page-02.html"><i class="fas fa-link" aria-hidden="true"></i></a>  -->      
-                                                        <a class="gallery-link" title="IMAGE TITLE" href="{{ asset('assets/images/portfolio/imageportfolioecommerce1.png') }}"><i class="fas fa-search" aria-hidden="true"></i></a> 
+                                                        <a class="gallery-link" title="IMAGE TITLE" href="{{ asset('assets/images/portfolio/imageportfolioecommerce1.jpg') }}"><i class="fas fa-search" aria-hidden="true"></i></a> 
                                                     </div>
                                                     <div class="portfolio-hover-content">
                                                         <span class="font-weight-600 line-height-normal alt-font text-white-2 text-uppercase margin-5px-bottom d-block">Jeremy Dupont</span>
@@ -190,13 +190,13 @@
                                 <!-- start portfolio item -->
                                 <li class="grid-item ecommerce application wow zoomIn portflioShadow" data-wow-delay="0.4s">
                                     <figure>
-                                        <div  class="portfolio-img bg-black"><img src="{{ asset('assets/images/portfolio/imageportfolioecommerce4.png') }}" alt=""/></div>
+                                        <div  class="portfolio-img bg-black"><img src="{{ asset('assets/images/portfolio/imageportfolioecommerce4.jpg') }}" alt=""/></div>
                                         <figcaption>
                                             <div class="portfolio-hover-main">
                                                 <div class="portfolio-hover-box align-middle">
                                                     <div class="portfolio-icon">                                              
                                                         <!-- <a href="single-project-page-03.html"><i class="fas fa-link" aria-hidden="true"></i></a>   -->  
-                                                        <a class="gallery-link" title="IMAGE TITLE" href="{{ asset('assets/images/portfolio/imageportfolioecommerce4.png') }}"><i class="fas fa-search" aria-hidden="true"></i></a>  
+                                                        <a class="gallery-link" title="IMAGE TITLE" href="{{ asset('assets/images/portfolio/imageportfolioecommerce4.jpg') }}"><i class="fas fa-search" aria-hidden="true"></i></a>  
                                                     </div>
                                                     <div class="portfolio-hover-content">
                                                         <span class="font-weight-600 line-height-normal alt-font text-white-2 text-uppercase margin-5px-bottom d-block">The Aparthotel</span>
@@ -211,13 +211,13 @@
                                 <!-- start portfolio item -->
                                 <li class="grid-item vitrine grid-item-double wow zoomIn portflioShadow" data-wow-delay="0.4s">
                                     <figure>
-                                        <div  class="portfolio-img bg-black"><img src="{{ asset('assets/images/portfolio/imageportfoliositevitrine5.png') }}" alt=""/></div>
+                                        <div  class="portfolio-img bg-black"><img src="{{ asset('assets/images/portfolio/imageportfoliositevitrine5.jpg') }}" alt=""/></div>
                                         <figcaption>
                                             <div class="portfolio-hover-main">
                                                 <div class="portfolio-hover-box align-middle">
                                                     <div class="portfolio-icon">                                              
                                                        <!--  <a href="single-project-page-03.html"><i class="fas fa-link" aria-hidden="true"></i></a>  -->   
-                                                        <a class="gallery-link" title="IMAGE TITLE" href="{{ asset('assets/images/portfolio/imageportfoliositevitrine5.png') }}"><i class="fas fa-search" aria-hidden="true"></i></a>  
+                                                        <a class="gallery-link" title="IMAGE TITLE" href="{{ asset('assets/images/portfolio/imageportfoliositevitrine5.jpg') }}"><i class="fas fa-search" aria-hidden="true"></i></a>  
                                                     </div>
                                                     <div class="portfolio-hover-content">
                                                         <span class="font-weight-600 line-height-normal alt-font text-white-2 text-uppercase margin-5px-bottom d-block">The Aparthotel</span>
@@ -232,13 +232,13 @@
                             <!-- start portfolio item -->
                                 <li class="grid-item application wow zoomIn portflioShadow" data-wow-delay="0.4s">
                                     <figure>
-                                        <div  class="portfolio-img bg-black"><img src="{{ asset('assets/images/portfolio/imageportfoliocommandeenligne2.png') }}" alt=""/></div>
+                                        <div  class="portfolio-img bg-black"><img src="{{ asset('assets/images/portfolio/imageportfoliocommandeenligne2.jpg') }}" alt=""/></div>
                                         <figcaption>
                                             <div class="portfolio-hover-main">
                                                 <div class="portfolio-hover-box align-middle">
                                                     <div class="portfolio-icon">                                              
                                                        <!--  <a href="single-project-page-03.html"><i class="fas fa-link" aria-hidden="true"></i></a>  -->   
-                                                        <a class="gallery-link" title="IMAGE TITLE" href="{{ asset('assets/images/portfolio/imageportfoliocommandeenligne2.png') }}"><i class="fas fa-search" aria-hidden="true"></i></a>  
+                                                        <a class="gallery-link" title="IMAGE TITLE" href="{{ asset('assets/images/portfolio/imageportfoliocommandeenligne2.jpg') }}"><i class="fas fa-search" aria-hidden="true"></i></a>  
                                                     </div>
                                                     <div class="portfolio-hover-content">
                                                         <span class="font-weight-600 line-height-normal alt-font text-white-2 text-uppercase margin-5px-bottom d-block">The Aparthotel</span>
@@ -253,13 +253,13 @@
                              <!-- start portfolio item -->
                                 <li class="grid-item ecommerce application wow zoomIn portflioShadow" data-wow-delay="0.4s">
                                     <figure>
-                                        <div  class="portfolio-img bg-black"><img src="{{ asset('assets/images/portfolio/imageportfolioecommerce2.png') }}" alt=""/></div>
+                                        <div  class="portfolio-img bg-black"><img src="{{ asset('assets/images/portfolio/imageportfolioecommerce2.jpg') }}" alt=""/></div>
                                         <figcaption>
                                             <div class="portfolio-hover-main">
                                                 <div class="portfolio-hover-box align-middle">
                                                     <div class="portfolio-icon">                                              
                                                         <!-- <a href="single-project-page-03.html"><i class="fas fa-link" aria-hidden="true"></i></a>   -->  
-                                                        <a class="gallery-link" title="IMAGE TITLE" href="{{ asset('assets/images/portfolio/imageportfolioecommerce2.png') }}"><i class="fas fa-search" aria-hidden="true"></i></a>  
+                                                        <a class="gallery-link" title="IMAGE TITLE" href="{{ asset('assets/images/portfolio/imageportfolioecommerce2.jpg') }}"><i class="fas fa-search" aria-hidden="true"></i></a>  
                                                     </div>
                                                     <div class="portfolio-hover-content">
                                                         <span class="font-weight-600 line-height-normal alt-font text-white-2 text-uppercase margin-5px-bottom d-block">The Aparthotel</span>
@@ -274,13 +274,13 @@
                              <!-- start portfolio item -->
                                 <li class="grid-item vitrine wow zoomIn portflioShadow" data-wow-delay="0.4s">
                                     <figure>
-                                        <div  class="portfolio-img bg-black"><img src="{{ asset('assets/images/portfolio/imageportfoliositevitrine1.png') }}" alt=""/></div>
+                                        <div  class="portfolio-img bg-black"><img src="{{ asset('assets/images/portfolio/imageportfoliositevitrine1.jpg') }}" alt=""/></div>
                                         <figcaption>
                                             <div class="portfolio-hover-main">
                                                 <div class="portfolio-hover-box align-middle">
                                                     <div class="portfolio-icon">                                              
                                                        <!--  <a href="single-project-page-03.html"><i class="fas fa-link" aria-hidden="true"></i></a>   -->  
-                                                        <a class="gallery-link" title="IMAGE TITLE" href="{{ asset('assets/images/portfolio/imageportfoliositevitrine1.png') }}"><i class="fas fa-search" aria-hidden="true"></i></a>  
+                                                        <a class="gallery-link" title="IMAGE TITLE" href="{{ asset('assets/images/portfolio/imageportfoliositevitrine1.jpg') }}"><i class="fas fa-search" aria-hidden="true"></i></a>  
                                                     </div>
                                                     <div class="portfolio-hover-content">
                                                         <span class="font-weight-600 line-height-normal alt-font text-white-2 text-uppercase margin-5px-bottom d-block">The Aparthotel</span>
@@ -295,13 +295,13 @@
                              <!-- start portfolio item -->
                                 <li class="grid-item catalogue wow zoomIn portflioShadow" data-wow-delay="0.4s">
                                     <figure>
-                                        <div  class="portfolio-img bg-black"><img src="{{ asset('assets/images/portfolio/imageportfoliocatalogue2.png') }}" alt=""/></div>
+                                        <div  class="portfolio-img bg-black"><img src="{{ asset('assets/images/portfolio/imageportfoliocatalogue2.jpg') }}" alt=""/></div>
                                         <figcaption>
                                             <div class="portfolio-hover-main">
                                                 <div class="portfolio-hover-box align-middle">
                                                     <div class="portfolio-icon">                                              
                                                         <!-- <a href="single-project-page-03.html"><i class="fas fa-link" aria-hidden="true"></i></a>  -->   
-                                                        <a class="gallery-link" title="IMAGE TITLE" href="{{ asset('assets/images/portfolio/imageportfoliocatalogue2.png') }}"><i class="fas fa-search" aria-hidden="true"></i></a>  
+                                                        <a class="gallery-link" title="IMAGE TITLE" href="{{ asset('assets/images/portfolio/imageportfoliocatalogue2.jpg') }}"><i class="fas fa-search" aria-hidden="true"></i></a>  
                                                     </div>
                                                     <div class="portfolio-hover-content">
                                                         <span class="font-weight-600 line-height-normal alt-font text-white-2 text-uppercase margin-5px-bottom d-block">The Aparthotel</span>
@@ -316,13 +316,13 @@
                                 <!-- start portfolio item -->
                                 <li class="grid-item application wow zoomIn portflioShadow" data-wow-delay="0.4s">
                                     <figure>
-                                        <div  class="portfolio-img bg-black"><img src="{{ asset('assets/images/portfolio/imageportfoliositeannonce.png') }}" alt=""/></div>
+                                        <div  class="portfolio-img bg-black"><img src="{{ asset('assets/images/portfolio/imageportfoliositeannonce.jpg') }}" alt=""/></div>
                                         <figcaption>
                                             <div class="portfolio-hover-main">
                                                 <div class="portfolio-hover-box align-middle">
                                                     <div class="portfolio-icon">                                              
                                                         <!-- <a href="single-project-page-03.html"><i class="fas fa-link" aria-hidden="true"></i></a>    --> 
-                                                        <a class="gallery-link" title="IMAGE TITLE" href="{{ asset('assets/images/portfolio/imageportfoliositeannonce.png') }}"><i class="fas fa-search" aria-hidden="true"></i></a>  
+                                                        <a class="gallery-link" title="IMAGE TITLE" href="{{ asset('assets/images/portfolio/imageportfoliositeannonce.jpg') }}"><i class="fas fa-search" aria-hidden="true"></i></a>  
                                                     </div>
                                                     <div class="portfolio-hover-content">
                                                         <span class="font-weight-600 line-height-normal alt-font text-white-2 text-uppercase margin-5px-bottom d-block">The Aparthotel</span>
