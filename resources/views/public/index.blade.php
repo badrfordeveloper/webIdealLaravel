@@ -374,7 +374,7 @@
                                 <!-- start portfolio item -->
                                 <li class="grid-item catalogue wow zoomIn">
                                     <figure>
-                                        <div class="portfolio-img bg-black"><img src="{{ asset('assets/images/portfolio/imageportfoliocatalogue1.jpg') }}" alt=""/></div>
+                                        <div class="portfolio-img bg-black"><img src="{{ asset('assets/images/portfolio275/imageportfoliocatalogue1.jpg') }}" alt=""/></div>
                                         <figcaption>
                                             <div class="portfolio-hover-main">
                                                 <div class="portfolio-hover-box align-middle">
@@ -395,7 +395,7 @@
                                 <!-- start portfolio item -->
                                 <li class="grid-item vitrine wow zoomIn" data-wow-delay="0.2s">
                                     <figure>
-                                        <div  class="portfolio-img bg-black"><img src="{{ asset('assets/images/portfolio/imageportfoliositevitrine4.jpg') }}" alt=""/></div>
+                                        <div  class="portfolio-img bg-black"><img src="{{ asset('assets/images/portfolio275/imageportfoliositevitrine4.jpg') }}" alt=""/></div>
                                         <figcaption>
                                             <div class="portfolio-hover-main">
                                                 <div class="portfolio-hover-box align-middle">
@@ -417,7 +417,7 @@
                                 <!-- start portfolio item -->
                                 <li class="grid-item application wow zoomIn">
                                     <figure>
-                                        <div  class="portfolio-img bg-black"><img src="{{ asset('assets/images/portfolio/imageportfoliocommandeenligne.jpg') }}" alt=""/></div>
+                                        <div  class="portfolio-img bg-black"><img src="{{ asset('assets/images/portfolio275/imageportfoliocommandeenligne.jpg') }}" alt=""/></div>
                                         <figcaption>
                                             <div class="portfolio-hover-main">
                                                 <div class="portfolio-hover-box align-middle">
@@ -438,7 +438,7 @@
                                 <!-- start portfolio item -->
                                 <li class="grid-item vitrine wow zoomIn" data-wow-delay="0.2s">
                                     <figure>
-                                        <div  class="portfolio-img bg-black"><img src="{{ asset('assets/images/portfolio/imageportfoliositevitrine2.jpg') }}" alt=""/></div>
+                                        <div  class="portfolio-img bg-black"><img src="{{ asset('assets/images/portfolio275/imageportfoliositevitrine2.jpg') }}" alt=""/></div>
                                         <figcaption>
                                             <div class="portfolio-hover-main">
                                                 <div class="portfolio-hover-box align-middle">
@@ -459,7 +459,7 @@
                                 <!-- start portfolio item -->
                                 <li class="grid-item ecommerce wow zoomIn">
                                     <figure>
-                                        <div  class="portfolio-img bg-black"><img src="{{ asset('assets/images/portfolio/imageportfolioecommerce3.jpg') }}" alt=""/></div>
+                                        <div  class="portfolio-img bg-black"><img src="{{ asset('assets/images/portfolio275/imageportfolioecommerce3.jpg') }}" alt=""/></div>
                                         <figcaption>
                                             <div class="portfolio-hover-main">
                                                 <div class="portfolio-hover-box align-middle">
@@ -480,7 +480,7 @@
                                 <!-- start portfolio item -->
                                 <li class="grid-item ecommerce wow zoomIn" data-wow-delay="0.4s">
                                     <figure>
-                                        <div  class="portfolio-img bg-black"><img src="{{ asset('assets/images/portfolio/imageportfolioecommerce1.jpg') }}" alt=""/></div>
+                                        <div  class="portfolio-img bg-black"><img src="{{ asset('assets/images/portfolio275/imageportfolioecommerce1.jpg') }}" alt=""/></div>
                                         <figcaption>
                                             <div class="portfolio-hover-main">
                                                 <div class="portfolio-hover-box align-middle">
@@ -501,13 +501,13 @@
                                 <!-- start portfolio item -->
                                 <li class="grid-item ecommerce wow zoomIn" data-wow-delay="0.4s">
                                     <figure>
-                                        <div  class="portfolio-img bg-black"><img src="{{ asset('assets/images/portfolio/imageportfolioecommerce4.jpg') }}" alt=""/></div>
+                                        <div  class="portfolio-img bg-black"><img src="{{ asset('assets/images/portfolio275/imageportfolioecommerce4.jpg') }}" alt=""/></div>
                                         <figcaption>
                                             <div class="portfolio-hover-main">
                                                 <div class="portfolio-hover-box align-middle">
                                                     <div class="portfolio-icon">                                              
                                                         <!-- <a href="single-project-page-03.html"><i class="fas fa-link" aria-hidden="true"></i></a>   -->  
-                                                        <a class="gallery-link" title="IMAGE TITLE" href="{{ asset('images/portfolio/imageportfolioecommerce4.jpg') }}"><i class="fas fa-search" aria-hidden="true"></i></a>  
+                                                        <a class="gallery-link" title="IMAGE TITLE" href="{{ asset('assets/images/portfolio/imageportfolioecommerce4.jpg') }}"><i class="fas fa-search" aria-hidden="true"></i></a>  
                                                     </div>
                                                     <div class="portfolio-hover-content">
                                                         <span class="font-weight-600 line-height-normal alt-font text-white-2 text-uppercase margin-5px-bottom d-block">The Aparthotel</span>
@@ -524,7 +524,7 @@
                              <!-- start portfolio item -->
                                 <li class="grid-item application wow zoomIn" data-wow-delay="0.4s">
                                     <figure>
-                                        <div  class="portfolio-img bg-black"><img src="{{ asset('assets/images/portfolio/imageportfolioecommerce2.jpg') }}" alt=""/></div>
+                                        <div  class="portfolio-img bg-black"><img src="{{ asset('assets/images/portfolio275/imageportfolioecommerce2.jpg') }}" alt=""/></div>
                                         <figcaption>
                                             <div class="portfolio-hover-main">
                                                 <div class="portfolio-hover-box align-middle">

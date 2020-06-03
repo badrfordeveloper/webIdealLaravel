@@ -5,7 +5,7 @@
                 <div class="container nav-header-container">
                     <!-- start logo -->
                     <div class="col-auto pl-lg-0">
-                        <a href="{{ url('/') }}" title="Pofo" class="logo"><img src="{{ asset('assets/images/logo.png') }}" data-rjs="{{ asset('assets/images/logo@2x.png') }}" class="logo-dark" alt="Pofo"><img src="{{ asset('assets/images/logo-white.png') }}" data-rjs="{{ asset('assets/images/logo-white@2x.png') }}" alt="Pofo" class="logo-light default"></a>
+                        <a href="{{ url('/') }}" title="Pofo" class="logo"><img src="{{ asset('assets/images/logo-white.png') }}" data-rjs="{{ asset('assets/images/logo-white@2x.png') }}" alt="Pofo" class="logo-light default"></a>
                     </div>
                     <!-- end logo -->
                     <div class="col accordion-menu pr-0 pr-md-3">
