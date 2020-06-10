@@ -1,3 +1,4 @@
+
 <!-- start footer --> 
 <footer class="footer-classic-dark bg-extra-dark-gray padding-five-bottom sm-padding-30px-bottom">
             <div class="bg-dark-footer padding-50px-tb sm-padding-30px-tb">
@@ -10,7 +11,7 @@
                         <!-- end slogan -->
                         <!-- start logo -->
                         <div class="col-lg-4 col-md-2 text-center sm-margin-10px-bottom">
-                            <a href="{{ url('/') }}"><img class="footer-logo" src="{{ asset('assets/images/logo-white.png') }}" data-rjs="images/logo-white@2x.png" alt="Pofo"></a>
+                            <a href="{{ url('/') }}"><img class="footer-logo" src="{{ asset('assets/images/logo-white.png') }}" data-rjs="images/logo-white@2x.png" alt="Web Ideal Logo Footer"></a>
                         </div>
                         <!-- end logo -->
                         <!-- start social media -->

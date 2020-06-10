@@ -22,7 +22,7 @@
             <div class="container"> 
                 <div class="row align-items-center">
                     <div class="col-12 col-lg-5 text-center md-margin-30px-bottom wow fadeInLeft">
-                        <img src="{{ asset('assets/images/examples/startup-849804_1920.jpg') }}" alt="" class="border-radius-6 w-100">
+                        <img src="{{ asset('assets/images/examples/startup-849804_1920.jpg') }}" alt="une équipe des informaticiens expert de Création site web" class="border-radius-6 w-100">
                     </div> 
                     <div class="col-12 col-lg-7 padding-eight-lr text-center text-lg-left lg-padding-nine-right md-padding-15px-lr wow fadeInRight about-page" data-wow-delay="0.2s">
                         <span class="text-deep-pink alt-font margin-10px-bottom d-inline-block text-medium"></span>
@@ -106,7 +106,7 @@
                     <!-- start feature box item -->
                     <div class="col-12 col-md-4 sm-margin-30px-bottom wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
                         <div class="feature-box-16 sm-width-100">
-                            <img src="{{ asset('assets/images/examples/AnalyseProfonde.jpg') }}" alt="" data-no-retina="">
+                            <img src="{{ asset('assets/images/examples/AnalyseProfonde.jpg') }}" alt="Analyse Profonde du projet web" data-no-retina="">
                             <div class="feature-box-content text-center">
                                 <div class="opacity-full-dark bg-extra-dark-gray"></div>
                                 <div class="d-table h-100 w-100 position-relative">
@@ -122,7 +122,7 @@
                     <!-- start feature box item -->
                     <div class="col-12 col-md-4 sm-margin-30px-bottom wow fadeInUp" data-wow-delay="0.25s" style="visibility: visible; animation-delay: 0.25s; animation-name: fadeInUp;">
                         <div class="feature-box-16 sm-width-100">
-                            <img src="{{ asset('assets/images/examples/StratégiesDigitales.jpg') }}" alt="" data-no-retina="">
+                            <img src="{{ asset('assets/images/examples/StratégiesDigitales.jpg') }}" alt="Stratégies Digitales pour réaliser des grand sites web" data-no-retina="">
                             <div class="feature-box-content text-center text-white-2">
                                 <div class="opacity-full-dark bg-extra-dark-gray"></div>
                                 <div class="d-table h-100 w-100 position-relative">
@@ -138,7 +138,7 @@
                     <!-- start feature box item -->
                     <div class="col-12 col-md-4 wow fadeInUp" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInUp;">
                         <div class="feature-box-16 sm-width-100">
-                            <img src="{{ asset('assets/images/examples/SolutionsInnovantes.jpg') }}" alt="" data-no-retina="">
+                            <img src="{{ asset('assets/images/examples/SolutionsInnovantes.jpg') }}" alt="Solutions Innovantes pour les sites web" data-no-retina="">
                             <div class="feature-box-content text-center text-white-2">
                                 <div class="opacity-full-dark bg-extra-dark-gray"></div>
                                 <div class="d-table h-100 w-100 position-relative">
@@ -162,7 +162,7 @@
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-12 col-lg-6 md-margin-30px-bottom wow fadeInLeft" style="visibility: visible; animation-name: fadeInLeft;">
-                        <img src="{{ asset('assets/images/examples/apple-devices-books-business.jpg') }}" class="w-100" alt="" data-no-retina="">
+                        <img src="{{ asset('assets/images/examples/apple-devices-books-business.jpg') }}" class="w-100" alt="Modèles magnifiquement fabriqués à la main pour votre site Web" data-no-retina="">
                     </div>
                     <div class="col-12 col-xl-5 col-lg-6 offset-xl-1 wow fadeInRight" style="visibility: visible; animation-name: fadeInRight;">
                         <h5 class="alt-font text-extra-dark-gray font-weight-600 margin-30px-bottom">Modèles magnifiquement fabriqués à la main pour votre site Web</h5>
@@ -196,7 +196,7 @@
                                 </div>
                                 <!-- start testimonials item -->
                                 <div class="testimonial-box padding-25px-all sm-padding-20px-all">
-                                    <div class="image-box width-20"><img src="{{ asset('assets/images/user.png') }}" class="rounded-circle" alt=""></div>
+                                    <div class="image-box width-20"><img src="{{ asset('assets/images/user.png') }}" class="rounded-circle" alt="user icon"></div>
                                     <div class="name-box padding-20px-left">
                                         <div class="alt-font font-weight-600 text-small text-uppercase text-extra-dark-gray">Shoko Mugikura</div>
                                         <p class="text-extra-small text-uppercase text-medium-gray">Graphic Designer</p>
@@ -210,7 +210,7 @@
                                     Bonjour, c’est exactement ce que j’attendais. Je n ‘ai qu’un mot à dire : SUPER TRAVAIL. Vous pouvez mettre en production les déclinaisons ! Je tiens à vous remercier sincèrement pour votre très grande réactivité cette proposition
                                 </div>
                                 <div class="testimonial-box padding-25px-all sm-padding-20px-all">
-                                    <div class="image-box width-20"><img src="{{ asset('assets/images/user.png') }}" class="rounded-circle" alt=""></div>
+                                    <div class="image-box width-20"><img src="{{ asset('assets/images/user.png') }}" class="rounded-circle" alt="user icon"></div>
                                     <div class="name-box padding-20px-left">
                                         <div class="alt-font font-weight-600 text-small text-uppercase text-extra-dark-gray">Alexander Harvard</div>
                                         <p class="text-extra-small text-uppercase text-medium-gray">Creative Director</p>
@@ -224,7 +224,7 @@
                                     Je tiens à vivement remercier votre équipe car elle a su à chaque fois faire preuve de réactivité et d’un esprit artistique digne des plus grands.Vos précieux conseils nous ont été d’une grande aide et nous souhaiterions vous solliciter bien plus souvent.
                                 </div>
                                 <div class="testimonial-box padding-25px-all sm-padding-20px-all">
-                                    <div class="image-box width-20"><img src="{{ asset('assets/images/user.png') }}" class="rounded-circle" alt=""></div>
+                                    <div class="image-box width-20"><img src="{{ asset('assets/images/user.png') }}" class="rounded-circle" alt="user icon"></div>
                                     <div class="name-box padding-20px-left">
                                         <div class="alt-font font-weight-600 text-small text-uppercase text-extra-dark-gray">Herman Miller</div>
                                         <p class="text-extra-small text-uppercase text-medium-gray">Co Founder / CEO</p>

@@ -23,11 +23,35 @@
                 <div class="row">
                     <div class="col-12 breadcrumb alt-font text-small">
                         <!-- breadcrumb -->
-                        <ul>
-                            <li><a href="{{ url('/')}}" class="text-medium-gray">Accueil</a></li>
-                            <li><a href="{{ url('blog')}}" class="text-medium-gray">Blog</a></li>
-                            <li class="text-medium-gray">{{ $post->titre }}</li>
-                        </ul>
+
+                            <ul vocab="https://schema.org/" typeof="BreadcrumbList">
+                              <li property="itemListElement" typeof="ListItem">
+                                <a property="item" typeof="WebPage"
+                                    href="{{ url('/')}}">
+                                  <span property="name">Accueil</span></a>
+                                <meta property="position" content="1">
+                              </li>
+                              ›
+                              <li property="itemListElement" typeof="ListItem">
+                                <a property="item" typeof="WebPage"
+                                    href="{{ url('blog')}}">
+                                  <span property="name">Blog</span></a>
+                                <meta property="position" content="2">
+                              </li>
+                              ›
+                              <li property="itemListElement" typeof="ListItem">
+                                <a property="item" typeof="WebPage"
+                                  href="{{ url()->current()}}">
+                                  <span property="name">{{ $post->titre }}</span></a>
+                                <meta property="position" content="3">
+                              </li>
+                            </ul>
+
+                   <!--      <ul>
+                       <li><a href="{{ url('/')}}" class="text-medium-gray">Accueil</a></li>
+                       <li><a href="{{ url('blog')}}" class="text-medium-gray">Blog</a></li>
+                       <li class="text-medium-gray">{{ $post->titre }}</li>
+                   </ul> -->
                         <!-- end breadcrumb -->
                     </div>
                 </div>

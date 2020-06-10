@@ -9,7 +9,7 @@
                         <li data-index="rs-3" data-transition="fade" data-slotamount="3" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="500"  data-thumb="{{ asset('assets/images/slides/img3.jpg') }}"  data-rotate="0"  data-saveperformance="off"  data-title="" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
                                 <div class="opacity-extra-medium bg-black position-relative z-index-1"></div>
                                 <!-- main image -->
-                                <img src="{{ asset('assets/images/slides/img3.jpg') }}"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="1" class="rev-slidebg" data-no-retina>
+                                <img src="{{ asset('assets/images/slides/img3.jpg') }}"  alt="Création des sites web Vitrine et Application Web"  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="1" class="rev-slidebg" data-no-retina>
                                 <!-- layer nr. 3 -->
                                 <div class="tp-caption NotGeneric-Title tp-resizeme" 
                                      data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
@@ -82,7 +82,7 @@
                             <li data-index="rs-3045" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="200"  data-thumb="{{ asset('assets/images/slides/img1.jpg') }}"  data-rotate="0"  data-fstransition="fade" data-fsmasterspeed="100" data-fsslotamount="0" data-saveperformance="off"  data-title="" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
                                 <div class="opacity-extra-medium bg-black position-relative z-index-1"></div>
                                 <!-- main image -->
-                                <img src="{{ asset('assets/images/slides/img1.jpg') }}"  alt="Ocean"  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="1" class="rev-slidebg">
+                                <img src="{{ asset('assets/images/slides/img1.jpg') }}"  alt="Création des sites web Bien Coder et optimiser"  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="1" class="rev-slidebg">
                                 <!-- layer nr. 3 -->
                                 <div class="tp-caption NotGeneric-Title tp-resizeme" 
                                      data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
@@ -146,7 +146,7 @@
                             <li data-index="rs-2" data-transition="fade" data-slotamount="3" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="500"  data-thumb="{{ asset('assets/images/slides/img2.jpg') }}"  data-rotate="0"  data-saveperformance="off"  data-title="" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
                                 <div class="opacity-extra-medium bg-black position-relative z-index-1"></div>
                                 <!-- main image -->
-                                <img src="{{ asset('assets/images/slides/img2.jpg') }}"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="1" class="rev-slidebg" data-no-retina>
+                                <img src="{{ asset('assets/images/slides/img2.jpg') }}"  alt="Création des sites web Responsive"  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="1" class="rev-slidebg" data-no-retina>
                                 <!-- layer nr. 3 -->
                                 <div class="tp-caption NotGeneric-Title tp-resizeme" 
                                      data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
@@ -374,7 +374,7 @@
                                 <!-- start portfolio item -->
                                 <li class="grid-item catalogue wow zoomIn">
                                     <figure>
-                                        <div class="portfolio-img bg-black"><img src="{{ asset('assets/images/portfolio275/imageportfoliocatalogue1.jpg') }}" alt=""/></div>
+                                        <div class="portfolio-img bg-black"><img src="{{ asset('assets/images/portfolio275/imageportfoliocatalogue1.jpg') }}" alt="Portfolio de Site web Catalogue"/></div>
                                         <figcaption>
                                             <div class="portfolio-hover-main">
                                                 <div class="portfolio-hover-box align-middle">
@@ -395,7 +395,7 @@
                                 <!-- start portfolio item -->
                                 <li class="grid-item vitrine wow zoomIn" data-wow-delay="0.2s">
                                     <figure>
-                                        <div  class="portfolio-img bg-black"><img src="{{ asset('assets/images/portfolio275/imageportfoliositevitrine4.jpg') }}" alt=""/></div>
+                                        <div  class="portfolio-img bg-black"><img src="{{ asset('assets/images/portfolio275/imageportfoliositevitrine4.jpg') }}" alt="Portfolio de Site web Vitrine"/></div>
                                         <figcaption>
                                             <div class="portfolio-hover-main">
                                                 <div class="portfolio-hover-box align-middle">
@@ -417,7 +417,7 @@
                                 <!-- start portfolio item -->
                                 <li class="grid-item application wow zoomIn">
                                     <figure>
-                                        <div  class="portfolio-img bg-black"><img src="{{ asset('assets/images/portfolio275/imageportfoliocommandeenligne.jpg') }}" alt=""/></div>
+                                        <div  class="portfolio-img bg-black"><img src="{{ asset('assets/images/portfolio275/imageportfoliocommandeenligne.jpg') }}" alt=" Portfolio de Site web E-commerce"/></div>
                                         <figcaption>
                                             <div class="portfolio-hover-main">
                                                 <div class="portfolio-hover-box align-middle">
@@ -438,7 +438,7 @@
                                 <!-- start portfolio item -->
                                 <li class="grid-item vitrine wow zoomIn" data-wow-delay="0.2s">
                                     <figure>
-                                        <div  class="portfolio-img bg-black"><img src="{{ asset('assets/images/portfolio275/imageportfoliositevitrine2.jpg') }}" alt=""/></div>
+                                        <div  class="portfolio-img bg-black"><img src="{{ asset('assets/images/portfolio275/imageportfoliositevitrine2.jpg') }}" alt="Portfolio de Site web Vitrine 2"/></div>
                                         <figcaption>
                                             <div class="portfolio-hover-main">
                                                 <div class="portfolio-hover-box align-middle">
@@ -459,7 +459,7 @@
                                 <!-- start portfolio item -->
                                 <li class="grid-item ecommerce wow zoomIn">
                                     <figure>
-                                        <div  class="portfolio-img bg-black"><img src="{{ asset('assets/images/portfolio275/imageportfolioecommerce3.jpg') }}" alt=""/></div>
+                                        <div  class="portfolio-img bg-black"><img src="{{ asset('assets/images/portfolio275/imageportfolioecommerce3.jpg') }}" alt="Portfolio de Site web E-commerce 2"/></div>
                                         <figcaption>
                                             <div class="portfolio-hover-main">
                                                 <div class="portfolio-hover-box align-middle">
@@ -480,7 +480,7 @@
                                 <!-- start portfolio item -->
                                 <li class="grid-item ecommerce wow zoomIn" data-wow-delay="0.4s">
                                     <figure>
-                                        <div  class="portfolio-img bg-black"><img src="{{ asset('assets/images/portfolio275/imageportfolioecommerce1.jpg') }}" alt=""/></div>
+                                        <div  class="portfolio-img bg-black"><img src="{{ asset('assets/images/portfolio275/imageportfolioecommerce1.jpg') }}" alt="Portfolio de Site web E-commerce 3"/></div>
                                         <figcaption>
                                             <div class="portfolio-hover-main">
                                                 <div class="portfolio-hover-box align-middle">
@@ -501,7 +501,7 @@
                                 <!-- start portfolio item -->
                                 <li class="grid-item ecommerce wow zoomIn" data-wow-delay="0.4s">
                                     <figure>
-                                        <div  class="portfolio-img bg-black"><img src="{{ asset('assets/images/portfolio275/imageportfolioecommerce4.jpg') }}" alt=""/></div>
+                                        <div  class="portfolio-img bg-black"><img src="{{ asset('assets/images/portfolio275/imageportfolioecommerce4.jpg') }}" alt=" Portfolio de Site web E-commerce 3"/></div>
                                         <figcaption>
                                             <div class="portfolio-hover-main">
                                                 <div class="portfolio-hover-box align-middle">
@@ -524,7 +524,7 @@
                              <!-- start portfolio item -->
                                 <li class="grid-item application wow zoomIn" data-wow-delay="0.4s">
                                     <figure>
-                                        <div  class="portfolio-img bg-black"><img src="{{ asset('assets/images/portfolio275/imageportfolioecommerce2.jpg') }}" alt=""/></div>
+                                        <div  class="portfolio-img bg-black"><img src="{{ asset('assets/images/portfolio275/imageportfolioecommerce2.jpg') }}" alt="Portfolio de Site web E-commerce 4"/></div>
                                         <figcaption>
                                             <div class="portfolio-hover-main">
                                                 <div class="portfolio-hover-box align-middle">
@@ -557,7 +557,7 @@
             <div class="container-fluid position-relative">
                 <div class="row align-items-center"> 
                     <div class="col-12 col-lg-6 text-center md-margin-50px-bottom sm-margin-30px-bottom wow fadeIn">
-                        <img src="{{ asset('assets/images/homepage-option15-image-3.png') }}" alt="" class="w-100">
+                        <img src="{{ asset('assets/images/homepage-option15-image-3.png') }}" alt="Ce qui nous distingue" class="w-100">
                     </div> 
                     <div class="col-12 col-lg-6 wow fadeIn" data-wow-delay="0.2s">
                         <div class="width-75 lg-width-100 padding-three-lr sm-no-padding-lr">
@@ -649,7 +649,7 @@
             <div class="container position-relative">
                 <div class="row justify-content-center">
                     <div class="col-12 col-xl-9 col-lg-10 text-center wow fadeIn last-paragraph-no-margin">
-                        <a class="popup-youtube" href="https://www.youtube.com/watch?v=nrJtHemSPW4"><img src="{{ asset('assets/images/icon-play-white.png') }}" class="width-10 sm-width-50px margin-30px-bottom" alt=""/></a>
+                        <a class="popup-youtube" href="https://www.youtube.com/watch?v=nrJtHemSPW4"><img src="{{ asset('assets/images/icon-play-white.png') }}" class="width-10 sm-width-50px margin-30px-bottom" alt="icon start"/></a>
                         <h4 class="alt-font text-white-2">Interface utilisateur belle et facile à utiliser, animations professionnelles et fonction glisser-déposer</h4>
                         <p class="width-75 mx-auto text-medium-gray lg-width-90 sm-width-100 sm-margin-30px-bottom">Avec des années d'expérience dans le secteur de la conception et du développement de sites Web, nous sommes fiers de créer des conceptions uniques, créatives et de qualité qui sont développées selon les dernières techniques de codage et de développement modernes, qui sont ensuite construites en utilisant le cadre de codage structuré le plus récent afin que votre équipe de développement peut facilement passer au niveau supérieur.</p>
                         <a href="{{ url('apropos') }}" class="btn btn-white btn-small text-extra-small border-radius-4 margin-45px-top sm-no-margin-top"><i class="fas fa-play-circle icon-very-small margin-5px-right ml-0" aria-hidden="true"></i> A Propos</a>
@@ -674,7 +674,7 @@
                                 </div>
                                 <!-- start testimonials item -->
                                 <div class="testimonial-box padding-25px-all sm-padding-20px-all">
-                                    <div class="image-box width-20"><img src="{{ asset('assets/images/user.png') }}" class="rounded-circle" alt=""></div>
+                                    <div class="image-box width-20"><img src="{{ asset('assets/images/user.png') }}" class="rounded-circle" alt="icon user"></div>
                                     <div class="name-box padding-20px-left">
                                         <div class="alt-font font-weight-600 text-small text-uppercase text-extra-dark-gray">Shoko Mugikura</div>
                                         <p class="text-extra-small text-uppercase text-medium-gray">Graphic Designer</p>
@@ -688,7 +688,7 @@
                                     Bonjour, c’est exactement ce que j’attendais. Je n ‘ai qu’un mot à dire : SUPER TRAVAIL. Vous pouvez mettre en production les déclinaisons ! Je tiens à vous remercier sincèrement pour votre très grande réactivité cette proposition
                                 </div>
                                 <div class="testimonial-box padding-25px-all sm-padding-20px-all">
-                                    <div class="image-box width-20"><img src="{{ asset('assets/images/user.png') }}" class="rounded-circle" alt=""></div>
+                                    <div class="image-box width-20"><img src="{{ asset('assets/images/user.png') }}" class="rounded-circle" alt="icon user"></div>
                                     <div class="name-box padding-20px-left">
                                         <div class="alt-font font-weight-600 text-small text-uppercase text-extra-dark-gray">Alexander Harvard</div>
                                         <p class="text-extra-small text-uppercase text-medium-gray">Creative Director</p>
@@ -702,7 +702,7 @@
                                     Je tiens à vivement remercier votre équipe car elle a su à chaque fois faire preuve de réactivité et d’un esprit artistique digne des plus grands.Vos précieux conseils nous ont été d’une grande aide et nous souhaiterions vous solliciter bien plus souvent.
                                 </div>
                                 <div class="testimonial-box padding-25px-all sm-padding-20px-all">
-                                    <div class="image-box width-20"><img src="{{ asset('assets/images/user.png') }}" class="rounded-circle" alt=""></div>
+                                    <div class="image-box width-20"><img src="{{ asset('assets/images/user.png') }}" class="rounded-circle" alt="icon user"></div>
                                     <div class="name-box padding-20px-left">
                                         <div class="alt-font font-weight-600 text-small text-uppercase text-extra-dark-gray">Herman Miller</div>
                                         <p class="text-extra-small text-uppercase text-medium-gray">Co Founder / CEO</p>
