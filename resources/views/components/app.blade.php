@@ -47,6 +47,7 @@
         <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}" />
         <!-- responsive css -->
         <link rel="stylesheet" href="{{ asset('assets/css/responsive.css') }}" />
+         {{ $css ?? '' }}
         <!--[if IE]>
             <script src="{{ asset('assets/js/html5shiv.js') }}"></script>
         <![endif]-->
@@ -126,6 +127,7 @@
         <script type="text/javascript" src="{{ asset('assets/revolution/js/extensions/revolution.extension.video.min.js') }}"></script>
         <!-- setting -->
         <script type="text/javascript" src="{{ asset('assets/js/main.js') }}"></script>
+         {{ $script ?? '' }}
 
 </body>
 </html>
