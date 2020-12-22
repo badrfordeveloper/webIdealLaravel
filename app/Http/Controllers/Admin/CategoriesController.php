@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests;
-
+use Config;
 use App\Category;
 use Illuminate\Http\Request;
 
@@ -16,15 +16,7 @@ class CategoriesController extends Controller
     }
     public function index(Request $request)
     {
-        $keyword = $request->get('search');
-        $perPage = 25;
-
-        if (!empty($keyword)) {
-            $categories = Category::where('libelle', 'LIKE', "%$keyword%")
-                ->latest()->paginate($perPage);
-        } else {
-            $categories = Category::latest()->paginate($perPage);
-        }
+         $categories = Category::all();
 
         return view('admin/categorie.categories.index', compact('categories'));
     }
@@ -53,7 +45,7 @@ class CategoriesController extends Controller
         
         Category::create($requestData);
 
-        return redirect('admin/categories')->with('flash_message', 'Category added!');
+        return redirect(url(config::get('constants.ADMIN_PATH').'categories'))->with('flash_message', 'Category added!');
     }
 
     /**
@@ -100,7 +92,7 @@ class CategoriesController extends Controller
         $category = Category::findOrFail($id);
         $category->update($requestData);
 
-        return redirect('admin/categories')->with('flash_message', 'Category updated!');
+        return redirect(url(config::get('constants.ADMIN_PATH').'categories'))->with('flash_message', 'Category updated!');
     }
 
     /**
@@ -114,6 +106,6 @@ class CategoriesController extends Controller
     {
         Category::destroy($id);
 
-        return redirect('admin/categories')->with('flash_message', 'Category deleted!');
+        return redirect(url(config::get('constants.ADMIN_PATH').'categories'))->with('flash_message', 'Category deleted!');
     }
 }

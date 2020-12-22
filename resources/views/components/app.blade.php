@@ -1,133 +1,41 @@
 <!doctype html>
+
 <html class="no-js" lang="{{ app()->getLocale() }}">
-
     <head>
-        <!-- title -->
-        <title>WEBIDEAL – Creative Agency, Corporate and Portfolio Multi-purpose Template</title>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1" />
-        <!-- CSRF Token -->
-        <meta name="csrf-token" content="{{ csrf_token() }}">
-        <meta name="url" content="{{ url('/') }}">
+          {{ $meta ?? "" }}
 
-        <meta name="author" content="ThemeZaa">
-        <!-- description -->
-        <meta name="description" content="POFO is a highly creative, modern, visually stunning and Bootstrap responsive multipurpose agency and portfolio HTML5 template with 25 ready home page demos.">
-        <!-- keywords -->
-        <meta name="keywords" content="creative, modern, clean, bootstrap responsive, html5, css3, portfolio, blog, agency, templates, multipurpose, one page, corporate, start-up, studio, branding, designer, freelancer, carousel, parallax, photography, personal, masonry, grid, coming soon, faq">
-        <!-- favicon -->
-        <link rel="shortcut icon" href="{{ asset('assets/images/favicon.png') }}">
-        <link rel="apple-touch-icon" href="{{ asset('assets/images/apple-touch-icon-57x57.png') }}">
-        <link rel="apple-touch-icon" sizes="72x72" href="{{ asset('assets/images/apple-touch-icon-72x72.png') }}">
-        <link rel="apple-touch-icon" sizes="114x114" href="{{ asset('assets/images/apple-touch-icon-114x114.png') }}">
-        <!-- animation -->
-        <link rel="stylesheet" href="{{ asset('assets/css/animate.css') }}" />
-        <!-- bootstrap -->
-        <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}" />
-        <!-- et line icon --> 
-        <link rel="stylesheet" href="{{ asset('assets/css/et-line-icons.css') }}" />
-        <!-- font-awesome icon -->
-        <link rel="stylesheet" href="{{ asset('assets/css/font-awesome.min.css') }}" />
-        <!-- themify icon -->
-        <link rel="stylesheet" href="{{ asset('assets/css/themify-icons.css') }}">
-        <!-- swiper carousel -->
-        <link rel="stylesheet" href="{{ asset('assets/css/swiper.min.css') }}">
-        <!-- justified gallery  -->
-        <link rel="stylesheet" href="{{ asset('assets/css/justified-gallery.min.css') }}">
-        <!-- magnific popup -->
-        <link rel="stylesheet" href="{{ asset('assets/css/magnific-popup.css') }}" />
-        <!-- revolution slider --> 
-        <link rel="stylesheet" type="text/css" href="{{ asset('assets/revolution/css/settings.css') }}" media="screen" />
-        <link rel="stylesheet" type="text/css" href="{{ asset('assets/revolution/css/layers.css') }}">
-        <link rel="stylesheet" type="text/css" href="{{ asset('assets/revolution/css/navigation.css') }}">
-        <!-- bootsnav -->
-        <link rel="stylesheet" href="{{ asset('assets/css/bootsnav.css') }}">
-        <!-- style -->
-        <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}" />
-        <!-- responsive css -->
-        <link rel="stylesheet" href="{{ asset('assets/css/responsive.css') }}" />
-         {{ $css ?? '' }}
-        <!--[if IE]>
-            <script src="{{ asset('assets/js/html5shiv.js') }}"></script>
-        <![endif]-->
+        
+         {{ $css ?? "" }}
+         
+         <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-177863907-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+        
+          gtag('config', 'UA-177863907-1');
+        </script>
     </head>
     <body>
-   
     <x-header :page="$page"/>
-
     <div id="app">
-
        {{ $slot }}
-
     </div>
-
-   
     <x-footer />
-    
         <!-- start scroll to top -->
-        <a class="scroll-top-arrow" href="javascript:void(0);"><i class="ti-arrow-up"></i></a>
+        <a class="scroll-top-arrow" href="javascript:void(0);"><i class="fas fa-arrow-circle-up" style="    font-size: 27px;"></i></a>
         <!-- end scroll to top  -->
         <!-- javascript libraries -->
-        <script type="text/javascript" src="{{ asset('assets/js/jquery.js') }}"></script>
-        <script type="text/javascript" src="{{ asset('assets/js/modernizr.js') }}"></script>
-        <script type="text/javascript" src="{{ asset('assets/js/bootstrap.bundle.js') }}"></script>
-        <script type="text/javascript" src="{{ asset('assets/js/jquery.easing.1.3.js') }}"></script>
-        <script type="text/javascript" src="{{ asset('assets/js/skrollr.min.js') }}"></script>
-        <script type="text/javascript" src="{{ asset('assets/js/smooth-scroll.js') }}"></script>
-        <script type="text/javascript" src="{{ asset('assets/js/jquery.appear.js') }}"></script>
-        <!-- menu navigation -->
-        <script type="text/javascript" src="{{ asset('assets/js/bootsnav.js') }}"></script>
-        <script type="text/javascript" src="{{ asset('assets/js/jquery.nav.js') }}"></script>
-        <!-- animation -->
-        <script type="text/javascript" src="{{ asset('assets/js/wow.min.js') }}"></script>
-        <!-- page scroll -->
-        <script type="text/javascript" src="{{ asset('assets/js/page-scroll.js') }}"></script>
-        <!-- swiper carousel -->
-        <script type="text/javascript" src="{{ asset('assets/js/swiper.min.js') }}"></script>
-        <!-- counter -->
-        <script type="text/javascript" src="{{ asset('assets/js/jquery.count-to.js') }}"></script>
-        <!-- parallax -->
-        <script type="text/javascript" src="{{ asset('assets/js/jquery.stellar.js') }}"></script>
-        <!-- magnific popup -->
-        <script type="text/javascript" src="{{ asset('assets/js/jquery.magnific-popup.min.js') }}"></script>
-        <!-- portfolio with shorting tab -->
-        <script type="text/javascript" src="{{ asset('assets/js/isotope.pkgd.min.js') }}"></script>
-        <!-- images loaded -->
-        <script type="text/javascript" src="{{ asset('assets/js/imagesloaded.pkgd.min.js') }}"></script>
-        <!-- pull menu -->
-        <script type="text/javascript" src="{{ asset('assets/js/classie.js') }}"></script>
-        <script type="text/javascript" src="{{ asset('assets/js/hamburger-menu.js') }}"></script>
-        <!-- counter  -->
-        <script type="text/javascript" src="{{ asset('assets/js/counter.js') }}"></script>
-        <!-- fit video  -->
-        <script type="text/javascript" src="{{ asset('assets/js/jquery.fitvids.js') }}"></script>
-        <!-- skill bars  -->
-        <script type="text/javascript" src="{{ asset('assets/js/skill.bars.jquery.js') }}"></script> 
-        <!-- justified gallery  -->
-        <script type="text/javascript" src="{{ asset('assets/js/justified-gallery.min.js') }}"></script>
-        <!--pie chart-->
-        <script type="text/javascript" src="{{ asset('assets/js/jquery.easypiechart.min.js') }}"></script>
-        <!-- instagram -->
-        <script type="text/javascript" src="{{ asset('assets/js/instafeed.min.js') }}"></script>
-        <!-- retina -->
-        <script type="text/javascript" src="{{ asset('assets/js/retina.min.js') }}"></script>
-        <!-- revolution -->
-        <script type="text/javascript" src="{{ asset('assets/revolution/js/jquery.themepunch.tools.min.js') }}"></script>
-        <script type="text/javascript" src="{{ asset('assets/revolution/js/jquery.themepunch.revolution.min.js') }}"></script>
-        <!-- revolution slider extensions (load below extensions JS files only on local file systems to make the slider work! The following part can be removed on server for on demand loading) -->
-        <script type="text/javascript" src="{{ asset('assets/revolution/js/extensions/revolution.extension.actions.min.js') }}"></script>
-        <script type="text/javascript" src="{{ asset('assets/revolution/js/extensions/revolution.extension.carousel.min.js') }}"></script>
-        <script type="text/javascript" src="{{ asset('assets/revolution/js/extensions/revolution.extension.kenburn.min.js') }}"></script>
-        <script type="text/javascript" src="{{ asset('assets/revolution/js/extensions/revolution.extension.layeranimation.min.js') }}"></script>
-        <script type="text/javascript" src="{{ asset('assets/revolution/js/extensions/revolution.extension.migration.min.js') }}"></script>
-        <script type="text/javascript" src="{{ asset('assets/revolution/js/extensions/revolution.extension.navigation.min.js') }}"></script>
-        <script type="text/javascript" src="{{ asset('assets/revolution/js/extensions/revolution.extension.parallax.min.js') }}"></script>
-        <script type="text/javascript" src="{{ asset('assets/revolution/js/extensions/revolution.extension.slideanims.min.js') }}"></script>
-        <script type="text/javascript" src="{{ asset('assets/revolution/js/extensions/revolution.extension.video.min.js') }}"></script>
-        <!-- setting -->
-        <script type="text/javascript" src="{{ asset('assets/js/main.js') }}"></script>
-         {{ $script ?? '' }}
+     
 
+
+       {{ $script ?? "" }}
+       <script type="text/javascript">
+         !function(r){"use strict";var a={initialize:function(){this.event(),this.hoverDropdown(),this.navbarSticky(),this.navbarScrollspy()},event:function(){var n,a,s,o,e,t,i,l,d=r("nav.navbar.bootsnav");d.hasClass("navbar-sticky")&&d.wrap("<div class='wrap-sticky'></div>"),d.hasClass("brand-center")&&(n=new Array,s=(a=r("nav.brand-center")).find("ul.navbar-nav"),a.prepend("<span class='storage-name' style='display:none;'></span>"),a.find("ul.navbar-nav > li").each(function(){var a;r(this).hasClass("active")&&(a=r("a",this).eq(0).text(),r(".storage-name").html(a)),n.push(r(this).html())}),o=n.splice(0,Math.round(n.length/2)),e=n,t="",(i=function(a){t="";for(var n=0;n<a.length;n++)t+="<li>"+a[n]+"</li>"})(o),s.html(t),a.find("ul.nav").first().addClass("navbar-left"),i(e),s.after('<ul class="nav navbar-nav"></ul>').next().html(t),a.find("ul.nav").last().addClass("navbar-right"),a.find("ul.nav.navbar-left").wrap("<div class='col-half left'></div>"),a.find("ul.nav.navbar-right").wrap("<div class='col-half right'></div>"),a.find("ul.navbar-nav > li").each(function(){var a=r("ul.dropdown-menu",this),n=r("ul.simple-dropdown",this),s=r("ul.megamenu-content",this);a.closest("li").addClass("dropdown"),n.closest("li").addClass("simple-dropdown"),s.closest("li").addClass("megamenu-fw")}),""==!(l=r(".storage-name").html())&&r("ul.navbar-nav > li:contains('"+l+"')").addClass("active")),d.hasClass("navbar-sidebar")?(r("body").addClass("wrap-nav-sidebar"),d.wrapInner("<div class='scroller'></div>")):r(".bootsnav").addClass("on"),d.find("ul.nav").hasClass("navbar-center")&&d.addClass("menu-center"),d.hasClass("navbar-full")?(r("nav.navbar.bootsnav").find("ul.nav").wrap("<div class='wrap-full-menu'></div>"),r(".wrap-full-menu").wrap("<div class='nav-full'></div>"),r("ul.nav.navbar-nav").prepend("<li class='close-full-menu'><a href='#'><i class='fa fa-times'></i></a></li>")):d.hasClass("navbar-mobile")?d.removeClass("no-full"):d.addClass("no-full"),d.hasClass("navbar-mobile")&&(r(".navbar-collapse").on("shown.bs.collapse",function(){r("body").addClass("side-right")}),r(".navbar-collapse").on("hide.bs.collapse",function(){r("body").removeClass("side-right")}),r(window).on("resize",function(){r("body").removeClass("side-right")})),d.hasClass("no-background")&&r(window).on("scroll",function(){34<r(window).scrollTop()?r(".navbar-fixed").removeClass("no-background"):r(".navbar-fixed").addClass("no-background")}),d.hasClass("navbar-transparent")&&r(window).on("scroll",function(){34<r(window).scrollTop()?r(".navbar-fixed").removeClass("navbar-transparent"):r(".navbar-fixed").addClass("navbar-transparent")}),r(".btn-cart").on("click",function(a){a.stopPropagation()}),r("nav.navbar.bootsnav .attr-nav").each(function(){r("li.search > a",this).on("click",function(a){a.preventDefault(),r(".top-search").slideToggle()})}),r(".input-group-addon.close-search").on("click",function(){r(".top-search").slideUp()}),r("nav.navbar.bootsnav .attr-nav").each(function(){r("li.side-menu > a",this).on("click",function(a){a.preventDefault(),r("nav.navbar.bootsnav > .side").toggleClass("on"),r("body").toggleClass("on-side")})}),r(".side .close-side").on("click",function(a){a.preventDefault(),r("nav.navbar.bootsnav > .side").removeClass("on"),r("body").removeClass("on-side")})},hoverDropdown:function(){var a,n,s,o=r("nav.navbar.bootsnav"),e=r(window).width(),t=r(window).height(),i=o.find("ul.nav").data("in"),l=o.find("ul.nav").data("out");e<991?(r(".scroller").css("height","auto"),r("nav.navbar.bootsnav ul.nav").find("li.dropdown").off("mouseenter"),r("nav.navbar.bootsnav ul.nav").find("li.dropdown").off("mouseleave"),r("nav.navbar.bootsnav ul.nav").find(".title").off("mouseenter"),r("nav.navbar.bootsnav ul.nav").off("mouseleave"),r(".navbar-collapse").removeClass("animated"),r("nav.navbar.bootsnav ul.nav").each(function(){r(".dropdown-menu",this).addClass("animated"),r(".dropdown-menu",this).removeClass(l),r("a.dropdown-toggle",this).off("click"),r("a.dropdown-toggle",this).on("click",function(a){return a.stopPropagation(),r(this).closest("li.dropdown").find(".dropdown-menu").first().stop().fadeToggle().toggleClass(i),r(this).closest("li.dropdown").first().toggleClass("on"),!1}),r("li.dropdown",this).each(function(){return r(this).find(".dropdown-menu").stop().fadeOut("fast"),r(this).on("hidden.bs.dropdown",function(){r(this).find(".dropdown-menu").stop().fadeOut("fast")}),!1}),r(".megamenu-fw",this).each(function(){r(".col-menu",this).each(function(){r(".content",this).addClass("animated"),r(".content",this).stop().fadeOut(),r(".title",this).off("click"),r(".title",this).on("click",function(){return r(this).closest(".col-menu").find(".content").stop().fadeToggle("fast").addClass(i),r(this).closest(".col-menu").toggleClass("on"),!1}),r(".content",this).on("click",function(a){a.stopPropagation()})})})}),a=function(){r("li.dropdown",this).removeClass("on"),r(".dropdown-menu",this).stop().fadeOut("fast"),r(".dropdown-menu",this).removeClass(i),r(".col-menu",this).removeClass("on"),r(".col-menu .content",this).stop().fadeOut("fast"),r(".col-menu .content",this).removeClass(i)},r("nav.navbar.bootsnav").on("mouseleave",function(){a()}),r("nav.navbar.bootsnav .attr-nav").each(function(){r(".dropdown-menu",this).removeClass("animated"),r("li.dropdown",this).off("mouseenter"),r("li.dropdown",this).off("mouseleave"),r("a.dropdown-toggle",this).off("click"),r("a.dropdown-toggle",this).on("click",function(a){a.stopPropagation(),r(this).closest("li.dropdown").find(".dropdown-menu").first().stop().fadeToggle(),r(".navbar-toggle").each(function(){r(".fa",this).removeClass("fa-times"),r(".fa",this).addClass("fa-bars"),r(".navbar-collapse").removeClass("in"),r(".navbar-collapse").removeClass("on")})}),r(this).on("mouseleave",function(){return r(".dropdown-menu",this).stop().fadeOut(),r("li.dropdown",this).removeClass("on"),!1})}),r(".navbar-toggle").each(function(){r(this).off("click"),r(this).on("click",function(){r(".fa",this).toggleClass("fa-bars"),r(".fa",this).toggleClass("fa-times"),a()})})):991<e&&(r(".scroller").css("height",t+"px"),o.hasClass("navbar-sidebar")?r("nav.navbar.bootsnav ul.nav").each(function(){r("a.dropdown-toggle",this).off("click"),r("a.dropdown-toggle",this).on("click",function(a){a.stopPropagation()}),r(".dropdown-menu",this).addClass("animated"),r("li.dropdown",this).on("mouseenter",function(){return r(".dropdown-menu",this).eq(0).removeClass(l),r(".dropdown-menu",this).eq(0).stop().fadeIn("fast").addClass(i),r(this).addClass("on"),!1}),r(".col-menu").each(function(){r(".content",this).addClass("animated"),r(".title",this).on("mouseenter",function(){return r(this).closest(".col-menu").find(".content").stop().fadeIn("fast").addClass(i),r(this).closest(".col-menu").addClass("on"),!1})}),r(this).on("mouseleave",function(){return r(".dropdown-menu",this).stop().removeClass(i),r(".dropdown-menu",this).stop().addClass(l).fadeOut("fast"),r(".col-menu",this).find(".content").stop().fadeOut("fast").removeClass(i),r(".col-menu",this).removeClass("on"),r("li.dropdown",this).removeClass("on"),!1})}):(navigator.userAgent.match(/Version\/[\d\.]+.*Safari/),r("nav.navbar.bootsnav ul.nav").each(function(){r("a.dropdown-toggle",this).off("click"),r("a.dropdown-toggle",this).on("click",function(a){a.stopPropagation()}),r(".megamenu-fw",this).each(function(){r(".title",this).off("click"),r("a.dropdown-toggle",this).off("click"),r(".content").removeClass("animated")}),r(".dropdown-menu",this).addClass("animated"),(0<r(".navbar-left-sidebar").length||0<r(".left-nav-sidebar").length)&&(r("li:not(.dropdown)",this).on("mouseenter",function(){r(this).parent().find(".dropdown-menu").stop().fadeOut("fast")}),r(document).on("click",".side-left-menu-close.active",function(a){r(this).removeClass("active")})),r("li.dropdown",this).on("mouseenter",function(){var a,n;return r(".side-left-menu-close").addClass("active"),(0<r(".navbar-left-sidebar").length||0<r(".left-nav-sidebar").length)&&(r(this).parent().find(".dropdown").removeClass("on"),0<r(this).parents(".dropdown-menu").length?r(this).parents(".dropdown-menu").find(".dropdown-menu").not(r(".dropdown-menu",this)).stop().fadeOut("fast"):(r(this).parents(".bootsnav .nav").find(".dropdown-menu").not(r(".dropdown-menu",this)).stop().fadeOut("fast"),r(":not(.second-level)",this).find(".third-level").stop().fadeOut("fast")),r(this).parent().hasClass("second-level")?r(this).parents(".navbar-nav").addClass("enter"):r(this).parent().hasClass("enter")&&r(".navbar-nav").removeClass("enter")),r(".dropdown-menu",this).eq(0).removeClass(l),r(".dropdown-menu",this).eq(0).stop().fadeIn("fast").addClass(i),r(this).addClass("on"),(0<r(".navbar-left-sidebar").length||0<r(".left-nav-sidebar").length)&&(0<r(".left-nav-sidebar").length?(a=r(".sidebar-part1").outerWidth(),a+=20,a+=r(".left-nav-on .navbar-nav").outerWidth()):a=r(".navbar-nav").outerWidth(),n=r(window).width(),setTimeout(function(){r(".dropdown").each(function(){r(this).hasClass("on")&&(a+=r(".dropdown-menu li",this).outerWidth())}),r(".side-left-menu-close").width(n-a)},300)),!1}),r("li.dropdown",this).on("mouseleave",function(){var a,n;r(".dropdown-menu",this).eq(0).removeClass(i),"none"!=r(".dropdown-menu",this).css("display")&&(0<r(".navbar-left-sidebar").length||0<r(".left-nav-sidebar").length)&&!r(this).parents(".bootsnav .nav").hasClass("enter")||(r(".dropdown-menu",this).eq(0).stop().fadeOut("fast").addClass(l),r(this).removeClass("on")),(0<r(".navbar-left-sidebar").length||0<r(".left-nav-sidebar").length)&&(r(".side-left-menu-close").addClass("active"),0<r(".left-nav-sidebar").length?(a=r(".sidebar-part1").outerWidth(),a+=20,a+=r(".left-nav-on .navbar-nav").outerWidth()):a=r(".navbar-nav").outerWidth(),n=r(window).width(),setTimeout(function(){r(".dropdown").each(function(){r(this).hasClass("on")&&(a+=r(".dropdown-menu li",this).outerWidth())}),r(".side-left-menu-close").width(n-a)},300))}),r(this).on("mouseleave",function(){return r(".dropdown-menu",this).removeClass(i),r(".side-left-menu-close").removeClass("active"),r(".dropdown-menu",this).eq(0).stop().fadeOut("fast").addClass(l),r("li.dropdown",this).removeClass("on"),(0<r(".navbar-left-sidebar").length||0<r(".left-nav-sidebar").length)&&(r(".bootsnav .nav").hasClass("enter")?r(".bootsnav .nav").removeClass("enter"):r(".bootsnav .nav").find(".dropdown-menu").fadeOut("fast")),!1})})),r("nav.navbar.bootsnav .attr-nav").each(function(){r("a.dropdown-toggle",this).off("click"),r("a.dropdown-toggle",this).on("click",function(a){a.stopPropagation()}),r(".dropdown-menu",this).addClass("animated"),r("li.dropdown",this).on("mouseenter",function(){return r(".dropdown-menu",this).eq(0).removeClass(l),r(".dropdown-menu",this).eq(0).stop().fadeIn("fast").addClass(i),r(this).addClass("on"),!1}),r("li.dropdown",this).on("mouseleave",function(){r(".dropdown-menu",this).eq(0).removeClass(i),r(".dropdown-menu",this).eq(0).stop().fadeOut("fast").addClass(l),r(this).removeClass("on")}),r(this).on("mouseleave",function(){return r(".dropdown-menu",this).removeClass(i),r(".dropdown-menu",this).eq(0).stop().fadeOut("fast").addClass(l),r("li.dropdown",this).removeClass("on"),!1})})),o.hasClass("navbar-full")&&(n=r(window).height(),s=r(window).width(),r(".nav-full").css("height",n+"px"),r(".wrap-full-menu").css("height",n+"px"),r(".wrap-full-menu").css("width",s+"px"),r(".navbar-collapse").addClass("animated"),r(".navbar-toggle").each(function(){var n=r(this).data("target");r(this).off("click"),r(this).on("click",function(a){return a.preventDefault(),r(n).removeClass(l),r(n).addClass("in"),r(n).addClass(i),!1}),r("li.close-full-menu").on("click",function(a){return a.preventDefault(),r(n).addClass(l),setTimeout(function(){r(n).removeClass("in"),r(n).removeClass(i)},500),!1})}))},navbarSticky:function(){var a,n,s=r("nav.navbar.bootsnav");s.hasClass("navbar-sticky")&&(a=s.height(),r(".wrap-sticky").height(a),n=r(".wrap-sticky").offset().top,r(window).on("scroll",function(){var a=r(window).scrollTop();n<a?s.addClass("sticked"):s.removeClass("sticked")}))},navbarScrollspy:function(){var n,a=r(".navbar-scrollspy"),s=r("body"),d=r("nav.navbar.bootsnav"),o=d.outerHeight();a.length&&(s.scrollspy({target:".navbar",offset:o}),r(".scroll").on("click",function(a){a.preventDefault(),r(".scroll").removeClass("active"),r(this).addClass("active"),r(".navbar-collapse").removeClass("in"),r(".navbar-toggle").each(function(){r(".fa",this).removeClass("fa-times"),r(".fa",this).addClass("fa-bars")});r(window).scrollTop();var n,s=r(this).find("a"),o=r(s.attr("href")).offset().top,e=r(window).width(),t=d.data("minus-value-desktop"),i=d.data("minus-value-mobile"),l=d.data("speed");n=992<e?o-t:o-i,r("html, body").stop().animate({scrollTop:n},l)}),n=function(){var a=s.data("bs.scrollspy");a&&(o=d.outerHeight(),a.options.offset=o,s.data("bs.scrollspy",a),s.scrollspy("refresh"))},r(window).on("resize",function(){clearTimeout(a);var a=setTimeout(n,200)}))}};r(document).ready(function(){a.initialize()}),r(window).on("resize",function(){a.hoverDropdown(),setTimeout(function(){a.navbarSticky()},500),r(".navbar-toggle").each(function(){r(".fa",this).removeClass("fa-times"),r(".fa",this).addClass("fa-bars"),r(this).removeClass("fixed")}),r(".navbar-collapse").removeClass("in"),r(".navbar-collapse").removeClass("on"),r(".navbar-collapse").removeClass("bounceIn")})}(jQuery);
+       </script>
+    
 </body>
+
 </html>
+

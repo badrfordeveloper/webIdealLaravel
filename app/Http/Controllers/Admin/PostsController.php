@@ -20,16 +20,7 @@ class PostsController extends Controller
     }
     public function index(Request $request)
     {
-        $keyword = $request->get('search');
-        $perPage = 25;
-
-        if (!empty($keyword)) {
-            $posts = Post::where('titre', 'LIKE', "%$keyword%")
-                ->orWhere('content', 'LIKE', "%$keyword%")
-                ->latest()->paginate($perPage);
-        } else {
-            $posts = Post::latest()->paginate($perPage);
-        }
+         $posts = Post::all();
 
         return view('admin/post.posts.index', compact('posts'));
     }
@@ -76,7 +67,7 @@ class PostsController extends Controller
             }
 
 
-        return redirect('admin/posts')->with('flash_message', 'Post added!');
+        return redirect(url(config::get('constants.ADMIN_PATH').'posts'))->with('flash_message', 'Post added!');
     }
 
     /**
@@ -150,7 +141,7 @@ class PostsController extends Controller
                 }
         }
 
-        return redirect('admin/posts')->with('flash_message', 'Post updated!');
+        return redirect(url(config::get('constants.ADMIN_PATH').'posts'))->with('flash_message', 'Post updated!');
     }
 
     /**
@@ -165,6 +156,6 @@ class PostsController extends Controller
         Post::destroy($id);
         
 
-        return redirect('admin/posts')->with('flash_message', 'Post deleted!');
+        return redirect(url(config::get('constants.ADMIN_PATH').'posts'))->with('flash_message', 'Post deleted!');
     }
 }

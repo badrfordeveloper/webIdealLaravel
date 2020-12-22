@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests;
-
+use Config;
 use App\Tag;
 use Illuminate\Http\Request;
 
@@ -25,6 +25,7 @@ class TagsController extends Controller
         } else {
             $tags = Tag::latest()->paginate($perPage);
         }
+         $tags = Tag::all();
 
         return view('admin/tag.tags.index', compact('tags'));
     }
@@ -53,7 +54,7 @@ class TagsController extends Controller
         
         Tag::create($requestData);
 
-        return redirect('admin/tags')->with('flash_message', 'Tag added!');
+        return redirect(url(config::get('constants.ADMIN_PATH').'tags'))->with('flash_message', 'Tag added!');
     }
 
     /**
@@ -100,7 +101,7 @@ class TagsController extends Controller
         $tag = Tag::findOrFail($id);
         $tag->update($requestData);
 
-        return redirect('admin/tags')->with('flash_message', 'Tag updated!');
+        return redirect(url(config::get('constants.ADMIN_PATH').'tags'))->with('flash_message', 'Tag updated!');
     }
 
     /**

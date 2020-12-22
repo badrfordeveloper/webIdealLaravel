@@ -20,8 +20,9 @@
     RewriteRule ^ index.php [L]
 </IfModule>
 
+
 # 1 Month for most static assets
-<filesMatch ".(css|jpg|jpeg|png|gif|js|ico)$">
+<filesMatch ".(css|webp|jpg|jpeg|png|gif|js|ico)$">
 Header set Cache-Control "max-age=15768000, public"
 </filesMatch>
 

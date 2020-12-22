@@ -1,3 +1,86 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+<url>
+  <loc>https://websites-ideal.com/</loc>
+  <lastmod>2020-08-10T12:47:47+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://websites-ideal.com/a-propos-web-ideal-creation-des-sites-et-des-applications-web-a-casablanca</loc>
+  <lastmod>2020-08-10T12:47:47+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://websites-ideal.com/nos-services-de-la-conception-et-de-la-creation-des-sites-internet-a-casablanca</loc>
+  <lastmod>2020-08-10T12:47:47+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://websites-ideal.com/portfolio-des-sites-et-des-appications-web-a-casablanca</loc>
+  <lastmod>2020-08-10T12:47:47+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://websites-ideal.com/contact-web-ideal-a-casablanca</loc>
+  <lastmod>2020-08-10T12:47:47+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://websites-ideal.com/fr</loc>
+  <lastmod>2020-08-10T12:47:47+00:00</lastmod>
+  <priority>1</priority>
+</url>
+<url>
+  <loc>https://websites-ideal.com/creation-des-sites-web-a-casablanca</loc>
+  <lastmod>2020-10-13T12:47:47+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://websites-ideal.com/creation-des-applications-web-a-casablanca</loc>
+  <lastmod>2020-10-13T12:47:47+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://websites-ideal.com/en</loc>
+  <lastmod>2020-08-10T12:47:47+00:00</lastmod>
+  <priority>1</priority>
+</url>
+<url>
+  <loc>https://websites-ideal.com/en/about-webideal-creation-of-websites-and-web-applications-in-casablanca</loc>
+  <lastmod>2020-08-10T12:47:47+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://websites-ideal.com/en/our-services-of-creation-and-design-website-in-casablanca</loc>
+  <lastmod>2020-08-10T12:47:47+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://websites-ideal.com/en/portfolio-of-sites-and-web-applications-in-casablanca</loc>
+  <lastmod>2020-08-10T12:47:47+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://websites-ideal.com/en/contact-web-ideal-in-casablanca</loc>
+  <lastmod>2020-08-10T12:47:47+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://websites-ideal.com/en/creation-des-sites-web-a-casablanca</loc>
+  <lastmod>2020-10-13T12:47:47+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://websites-ideal.com/en/creation-des-applications-web-a-casablanca</loc>
+  <lastmod>2020-10-13T12:47:47+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+
 </urlset>
