@@ -196,13 +196,8 @@
 
                         "name": "{{__('messages.ServicesOfferCatalog')}}",
 
-                        "itemListElement": [{
-
-                        "@type": "OfferCatalog",
-
-                        "name": "{{__('messages.ServicesOfferCatalog')}}",
-
-                        "itemListElement": [{
+                        "itemListElement": [
+                        {
 
                             "@type": "Offer",
 
@@ -214,7 +209,8 @@
 
                             }
 
-                        }, {
+                        }, 
+                        {
 
                             "@type": "Offer",
 
@@ -226,7 +222,8 @@
 
                             }
 
-                        }, {
+                        }, 
+                        {
 
                             "@type": "Offer",
 
@@ -238,13 +235,15 @@
 
                             }
 
-                        }]
+                        }
+                        ]
 
                     }]
 
                 }
 
             }
+
 
         </script>
 
