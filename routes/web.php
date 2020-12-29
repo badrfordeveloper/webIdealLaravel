@@ -83,6 +83,8 @@ Route::group(
         
         Route::post(Config::get('constants.ADMIN_PATH').'mailings/send-mail','Admin\\MailingsController@send_mail');  
         Route::post(Config::get('constants.ADMIN_PATH').'mailings/import-excel','Admin\\MailingsController@import_excel');
+        Route::get(Config::get('constants.ADMIN_PATH').'testMailings','Admin\\MailingsController@testMailings');
+        Route::get(Config::get('constants.ADMIN_PATH').'sendTestMailings','Admin\\MailingsController@sendTestMailings');
 
     }
 );

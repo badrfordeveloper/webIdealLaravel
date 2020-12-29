@@ -192,4 +192,27 @@ class MailingsController extends Controller
 
         return redirect(url(Config::get('constants.ADMIN_PATH').'mailings'))->with('flash_message', 'Les emails imports success !');
     }
+
+    public function testMailings()
+    {
+        $mailings = Mailing::where('nb_email','=',0)->get();
+
+        return view('admin/mailings.test', compact('mailings'));
+       dd('ok');
+    }
+
+     public function sendTestMailings(Request $request)
+    {
+
+            $mailing = Mailing::where('nb_email','=',0)->first();
+            
+            $email = $mailing->email;
+
+            \Mail::to($email)->send(new \App\Mail\SendMail($mailing));
+
+            $mailing->nb_email += 1;
+            $mailing->save(); 
+            return $email;
+  
+    }
 }

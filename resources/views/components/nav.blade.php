@@ -27,9 +27,6 @@
                                 <li><a class="dropdown-item" href="mailbox.html">Mailbox</a></li>
 
                                 <li class="dropdown-divider"></li>
-
-                           		
-
                             </ul> -->
 
                         </div>
@@ -71,6 +68,11 @@
                     <li class="active">
 
                         <a href="{{ url(Config::get('constants.ADMIN_PATH').'mailings')}}"><i class="fa fa-envelope"></i> <span class="nav-label">Mailing</span></a>
+
+                    </li>
+                    <li class="active">
+
+                        <a href="{{ url(Config::get('constants.ADMIN_PATH').'testMailings')}}"><i class="fa fa-envelope"></i> <span class="nav-label">Test Mailings</span></a>
 
                     </li>
 
