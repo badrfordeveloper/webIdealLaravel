@@ -93,44 +93,33 @@
                                     <a class="nav-link dropdown-toggle" href="#" id="dropdown09" title="Francais" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img width="20" alt="Francais" src="{{asset('assets/images/fr.webp')}}"> Francais</a>
                                     <div class="dropdown-menu" aria-labelledby="dropdown09">
                                         <a class="dropdown-item" title="Anglais" style="color: white" href="
-                                       <?php 
-                                        $route=Request::route()->getName().'En';
-                                    
-
-                                        if($route=="detailArticleEn"){
-                                         echo  route($route, ['locale' => "en",'id'=>$post->id ,'titre' => $post->titre ]);
+                                           <?php 
+                                            $route=Request::route()->getName().'En';
+                                            if($route=="detailArticleEn"){
+                                                echo  route($route, ['locale' => "en",'id'=>$post->id ,'titre' => $post->titre ]);
                                             }
                                             else{
                                                 echo  route($route, ['locale' => "en"]);
                                             }
-                                        
-                                        ?>
-"><img width="20" alt="Anglais" src="{{asset('assets/images/us.webp')}}"> Anglais</a>
+                                            ?>
+                                        "><img width="20" alt="Anglais" src="{{asset('assets/images/us.webp')}}"> Anglais</a>
                                         
                                     </div>
                                   @endif
                                 </li>
                                 @if(1==2)
+                                    <li class="megamenu-fw">
 
-                                <li class="megamenu-fw">
+                                        <a href="<?=($lang != "") ? route('blogEn', ['locale' => $lang]) : route('blog') ?>">{{ __('messages.blog') }}</a>
 
-                                    <a href="<?=($lang != "") ? route('blogEn', ['locale' => $lang]) : route('blog') ?>">{{ __('messages.blog') }}</a>
-
-                                </li>
+                                    </li>
                                 @endif
-
-                                <!-- start menu -->
-
                             </ul>
-
                         </div>
-
                     </div>
 
                     <div class="col-auto pr-lg-0">
-
                         <!-- <div class="header-searchbar">
-                        
                             <a href="#search-header" class="header-search-form"><i class="fas fa-search search-button"></i></a>
                         
                             search input
@@ -163,37 +152,33 @@
 
                         <div class="header-social-icon d-none d-md-inline-block">
                             <ul class="navbar-nav mr-auto">
-                        
-                            <li class="nav-item dropdown">
-                              @if(app()->getLocale() == "en")
-                                <a class="nav-link dropdown-toggle" href="{{ url('/en') }}" id="dropdown09" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="English"><img width="20" alt="English" src="{{asset('assets/images/us.webp')}}">  English</a>
-                                <div class="dropdown-menu" aria-labelledby="dropdown09">
-                                    <a class="dropdown-item" title="French" style="color: #000" href="<?php  echo route(substr( Request::route()->getName(),0, -2 )); ?>"><img width="20px" src="{{asset('assets/images/fr.webp')}}"> French</a>
-                                    
-                                </div>
-                              @else
-                                <a class="nav-link dropdown-toggle" href="{{ url('/fr') }}" id="dropdown09" title="Francais" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img width="20" alt="Francais" src="{{asset('assets/images/fr.webp')}}"> Francais</a>
-                                <div class="dropdown-menu" aria-labelledby="dropdown09">
-                                    <a class="dropdown-item" title="Anglais" style="color: #000" href=" 
- <?php 
-                                        $route=Request::route()->getName().'En';
-                                    
-
-                                        if($route=="detailArticleEn"){
-                                         echo  route($route, ['locale' => "en",'id'=>$post->id ,'titre' => $post->titre ]);
-                                            }
-                                            else{
-                                                echo  route($route, ['locale' => "en"]);
-                                            }
+                                <li class="nav-item dropdown">
+                                  @if(app()->getLocale() == "en")
+                                    <a class="nav-link dropdown-toggle" href="#" id="dropdown09" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="English"><img width="20" alt="English" src="{{asset('assets/images/us.webp')}}">  English</a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdown09">
+                                        <a class="dropdown-item" title="French" style="color: #000" href="<?php  echo route(substr( Request::route()->getName(),0, -2 )); ?>"><img width="20px" src="{{asset('assets/images/fr.webp')}}"> French</a>
                                         
-                                        ?>
-"><img width="20" alt="Anglais" src="{{asset('assets/images/us.webp')}}">  
-                                    Anglais</a>
-                                    
-                                </div>
-                              @endif
-                            </li>
-                    </ul>
+                                    </div>
+                                  @else
+                                    <a class="nav-link dropdown-toggle" href="#" id="dropdown09" title="Francais" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img width="20" alt="Francais" src="{{asset('assets/images/fr.webp')}}"> Francais</a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdown09">
+                                        <a class="dropdown-item" title="Anglais" style="color: #000" href=" 
+                                            <?php 
+                                                $route=Request::route()->getName().'En';
+                                                if($route=="detailArticleEn"){
+                                                 echo  route($route, ['locale' => "en",'id'=>$post->id ,'titre' => $post->titre ]);
+                                                    }
+                                                else{
+                                                        echo  route($route, ['locale' => "en"]);
+                                                }
+                                            ?>
+                                            "><img width="20" alt="Anglais" src="{{asset('assets/images/us.webp')}}">  
+                                        Anglais</a>
+                                        
+                                    </div>
+                                  @endif
+                                </li>
+                            </ul>
 
                         </div>
 

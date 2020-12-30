@@ -18,7 +18,7 @@
         </script>
     </head>
     <body>
-    <x-header :page="$page" :post="$post"/>
+    <x-header :page="$page" :post="$post ?? '' "/>
     <div id="app">
        {{ $slot }}
     </div>
