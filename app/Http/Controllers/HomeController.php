@@ -314,7 +314,6 @@ class HomeController extends Controller
     }
 
 
-
     public function detailArticle($id,$titre,$locale = "fr")
 
     {

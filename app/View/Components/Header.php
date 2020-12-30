@@ -15,6 +15,7 @@ class Header extends Component
 {
 
     public $page;
+    public $post;
 
     /**
 
@@ -26,7 +27,7 @@ class Header extends Component
 
      */
 
-    public function __construct($page)
+    public function __construct($page,$post='')
 
     {
 
@@ -35,6 +36,7 @@ class Header extends Component
         
 
         $this->page = $page;
+         $this->post = $post;
 
         
 

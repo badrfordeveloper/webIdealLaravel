@@ -83,7 +83,7 @@
             <div class="container">
                 <div class="row">
                     <main class="col-12 col-lg-9 right-sidebar md-margin-60px-bottom sm-margin-40px-bottom md-padding-15px-lr">
-                        <?php $posts  = array(); ?>
+                        <?php /*$posts  = array();*/ ?>
                         @forelse($posts as $post)
                         <!-- start post item --> 
                         <div class="blog-post-content d-flex align-items-center flex-wrap margin-60px-bottom padding-60px-bottom border-bottom border-color-extra-light-gray md-margin-30px-bottom md-padding-30px-bottom text-center text-md-left md-no-border">

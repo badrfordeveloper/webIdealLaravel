@@ -92,7 +92,20 @@
                                   @else
                                     <a class="nav-link dropdown-toggle" href="#" id="dropdown09" title="Francais" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img width="20" alt="Francais" src="{{asset('assets/images/fr.webp')}}"> Francais</a>
                                     <div class="dropdown-menu" aria-labelledby="dropdown09">
-                                        <a class="dropdown-item" title="Anglais" style="color: white" href="<?php $route=Request::route()->getName().'En'; echo  route($route, ['locale' => "en"]); ?>"><img width="20" alt="Anglais" src="{{asset('assets/images/us.webp')}}"> Anglais</a>
+                                        <a class="dropdown-item" title="Anglais" style="color: white" href="
+                                       <?php 
+                                        $route=Request::route()->getName().'En';
+                                    
+
+                                        if($route=="detailArticleEn"){
+                                         echo  route($route, ['locale' => "en",'id'=>$post->id ,'titre' => $post->titre ]);
+                                            }
+                                            else{
+                                                echo  route($route, ['locale' => "en"]);
+                                            }
+                                        
+                                        ?>
+"><img width="20" alt="Anglais" src="{{asset('assets/images/us.webp')}}"> Anglais</a>
                                         
                                     </div>
                                   @endif
@@ -161,7 +174,20 @@
                               @else
                                 <a class="nav-link dropdown-toggle" href="{{ url('/fr') }}" id="dropdown09" title="Francais" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img width="20" alt="Francais" src="{{asset('assets/images/fr.webp')}}"> Francais</a>
                                 <div class="dropdown-menu" aria-labelledby="dropdown09">
-                                    <a class="dropdown-item" title="Anglais" style="color: #000" href=" <?php $route=Request::route()->getName().'En'; echo  route($route, ['locale' => "en"]); ?>"><img width="20" alt="Anglais" src="{{asset('assets/images/us.webp')}}">  
+                                    <a class="dropdown-item" title="Anglais" style="color: #000" href=" 
+ <?php 
+                                        $route=Request::route()->getName().'En';
+                                    
+
+                                        if($route=="detailArticleEn"){
+                                         echo  route($route, ['locale' => "en",'id'=>$post->id ,'titre' => $post->titre ]);
+                                            }
+                                            else{
+                                                echo  route($route, ['locale' => "en"]);
+                                            }
+                                        
+                                        ?>
+"><img width="20" alt="Anglais" src="{{asset('assets/images/us.webp')}}">  
                                     Anglais</a>
                                     
                                 </div>
