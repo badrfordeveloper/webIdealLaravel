@@ -17,7 +17,7 @@
                     <a href="{{ url(Config::get('constants.ADMIN_PATH').'posts') }}">Posts</a>
                 </li>
                 <li class="breadcrumb-item active">
-                    <strong>Nouveau</strong>
+                    <strong>Editer</strong>
                 </li>
             </ol>
         </div>
@@ -39,7 +39,8 @@
                         </div>
                     </div>
                     <div class="ibox-content">
-                        <form id="myForm" method="POST" action="{{ url(Config::get('constants.ADMIN_PATH').'posts') }}" accept-charset="UTF-8" class="form-horizontal" enctype="multipart/form-data">
+                        <form id="myForm" method="POST" action="{{ url(Config::get('constants.ADMIN_PATH').'posts/' . $post->id) }}" accept-charset="UTF-8" class="form-horizontal" enctype="multipart/form-data">
+                            {{ method_field('PATCH') }}
                             {{ csrf_field() }}
 
                              @include ('admin/post.posts.form', ['formMode' => 'edit'])

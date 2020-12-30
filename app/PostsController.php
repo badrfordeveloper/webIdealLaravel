@@ -20,16 +20,7 @@ class PostsController extends Controller
     }
     public function index(Request $request)
     {
-        $keyword = $request->get('search');
-        $perPage = 25;
-
-        if (!empty($keyword)) {
-            $posts = Post::where('titre', 'LIKE', "%$keyword%")
-                ->orWhere('content', 'LIKE', "%$keyword%")
-                ->latest()->paginate($perPage);
-        } else {
-            $posts = Post::latest()->paginate($perPage);
-        }
+       $posts = Post::all();
 
         return view('admin/post.posts.index', compact('posts'));
     }

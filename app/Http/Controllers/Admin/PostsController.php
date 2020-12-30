@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Http\Requests;
 use Auth;
+use Config;
 
 use App\Post;
 use App\Category;

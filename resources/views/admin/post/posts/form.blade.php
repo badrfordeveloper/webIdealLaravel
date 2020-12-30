@@ -1,18 +1,54 @@
-<div class="form-group {{ $errors->has('titre') ? 'has-error' : ''}}">
-    <label for="titre" class="control-label">{{ 'Titre' }}</label>
-    <input class="form-control" name="titre" type="text" id="titre" value="{{ isset($post->titre) ? $post->titre : ''}}" >
-    {!! $errors->first('titre', '<p class="help-block">:message</p>') !!}
+<div class="row">
+    <div class="col-md-6">
+        <div class="form-group {{ $errors->has('titre') ? 'has-error' : ''}}">
+            <label for="titre" class="control-label">{{ 'Titre Francais' }}</label>
+            <input class="form-control" name="titre" type="text" id="titre" value="{{ isset($post->titre) ? $post->titre : ''}}" >
+            {!! $errors->first('titre', '<p class="help-block">:message</p>') !!}
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="form-group {{ $errors->has('titreEn') ? 'has-error' : ''}}">
+            <label for="titre" class="control-label">{{ 'Titre Anglais' }}</label>
+            <input class="form-control" name="titreEn" type="text" id="titreEn" value="{{ isset($post->titreEn) ? $post->titreEn : ''}}" >
+            {!! $errors->first('titre', '<p class="help-block">:message</p>') !!}
+        </div>
+    </div>
 </div>
-<div class="form-group {{ $errors->has('description') ? 'has-error' : ''}}">
-    <label for="description" class="control-label">{{ 'Description' }}</label>
-    <textarea class="form-control" rows="5" name="description" type="textarea" id="description" >{{ isset($post->description) ? $post->description : ''}}</textarea>
-    {!! $errors->first('description', '<p class="help-block">:message</p>') !!}
+<div class="row">
+    <div class="col-md-6">
+        <div class="form-group {{ $errors->has('description') ? 'has-error' : ''}}">
+            <label for="description" class="control-label">{{ 'Description Francais' }}</label>
+            <textarea class="form-control" rows="5" name="description" type="textarea" id="description" >{{ isset($post->description) ? $post->description : ''}}</textarea>
+            {!! $errors->first('description', '<p class="help-block">:message</p>') !!}
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="form-group {{ $errors->has('descriptionEn') ? 'has-error' : ''}}">
+            <label for="descriptionEn" class="control-label">{{ 'Description Anglais' }}</label>
+            <textarea class="form-control" rows="5" name="descriptionEn" type="textarea" id="descriptionEn" >{{ isset($post->descriptionEn) ? $post->descriptionEn : ''}}</textarea>
+            {!! $errors->first('descriptionEn', '<p class="help-block">:message</p>') !!}
+        </div>
+    </div>
 </div>
-<div class="form-group {{ $errors->has('content') ? 'has-error' : ''}}">
-    <label for="content" class="control-label">{{ 'Content' }}</label>
-    <textarea class="form-control" rows="5" name="content" type="textarea" id="content" >{{ isset($post->content) ? $post->content : ''}}</textarea>
-    {!! $errors->first('content', '<p class="help-block">:message</p>') !!}
+
+<div class="row">
+    <div class="col-md-6">
+        <div class="form-group {{ $errors->has('content') ? 'has-error' : ''}}">
+            <label for="content" class="control-label">{{ 'Content Francais' }}</label>
+            <textarea class="form-control" rows="5" name="content" type="textarea" id="content" >{{ isset($post->content) ? $post->content : ''}}</textarea>
+            {!! $errors->first('content', '<p class="help-block">:message</p>') !!}
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="form-group {{ $errors->has('contentEn') ? 'has-error' : ''}}">
+            <label for="contentEn" class="control-label">{{ 'Content Anglais' }}</label>
+            <textarea class="form-control" rows="5" name="contentEn" type="textarea" id="contentEn" >{{ isset($post->contentEn) ? $post->contentEn : ''}}</textarea>
+            {!! $errors->first('contentEn', '<p class="help-block">:message</p>') !!}
+        </div>
+    </div>
 </div>
+
+
 <div class="form-group {{ $errors->has('photo') ? 'has-error' : ''}}">
     <label for="photo" class="control-label">{{ 'Photo' }}</label>
     

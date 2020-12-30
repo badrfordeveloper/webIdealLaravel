@@ -22,13 +22,24 @@
                                         <td colspan="2" style="text-align:center"> <img height="150px;" src="@if($post->photo) {{asset('storage/'.$post->photo)}} @else {{asset('assets/images/default.png')}} @endif" alt="{{ $post->titre }}"> </td>
                                     </tr> 
                                     <tr>
-                                        <th> Titre </th><td> {{ $post->titre }} </td>
+                                        <th> Titre Francais</th><td> {{ $post->titre }} </td>
+                                    </tr>
+                                    <tr> 
+                                    <tr>
+                                        <th> Titre Anglais </th><td> {{ $post->titreEn }} </td>
                                     </tr>
                                     <tr>
-                                        <th> Description </th><td> {{ $post->description }} </td>
+                                        <th> Description Francais</th><td> {{ $post->description }} </td>
                                     </tr>
                                     <tr>
-                                        <th> Content </th><td> {!! $post->content !!} </td>
+                                        <th> Description Anglais</th><td> {{ $post->descriptionEn }} </td>
+                                    </tr>
+                                    <tr>
+                                        <th> Content Francais</th><td> {!! $post->content !!} </td>
+                                    </tr>
+
+                                    <tr>
+                                        <th> Content Anglais</th><td> {!! $post->contentEn !!} </td>
                                     </tr>
                                     
                                 </tbody>

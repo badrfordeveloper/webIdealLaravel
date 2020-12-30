@@ -50,19 +50,23 @@
                             <table class="table table-striped table-bordered table-hover dataTables-example" >
                                 <thead>
                                     <tr>
-                                        <th>Photo</th><th>Titre</th><th>Description</th><th>Date</th><th><i class="fa fa-wrench"></i></th>
+                                        <th>Photo</th>
+                                        <th>Titre</th>
+                                        <th>Description</th>
+                                        <th>Date</th>
+                                        <th><i class="fa fa-wrench"></i></th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     @foreach($posts as $item)
                                     <tr class="gradeX" data-key="{{$item->id}}" >
-                                        <td><img height="50px;" src="@if($item->photo) {{asset('storage/'.$item->photo)}} @else {{asset('assets/images/default.png')}} @endif" alt="{{ $item->titre }}"></td>
+                                        <td rowspan="2"><img height="50px;" src="@if($item->photo) {{asset('storage/'.$item->photo)}} @else {{asset('assets/images/default.png')}} @endif" alt="{{ $item->titre }}"></td>
                                         <td>{{ $item->titre }}</td>
                                         <td>{{ substr($item->description,0,50).'...' }}</td>
-                                        <td>{{ $item->created_at }}</td>
+                                        <td rowspan="2">{{ $item->created_at }}</td>
 
 
-                                         <td class="text-center">
+                                         <td rowspan="2" class="text-center">
 
                                          <div class="btn-group">
                                                 <button data-toggle="dropdown" class="btn btn-primary dropdown-toggle">Actions</button>
@@ -88,12 +92,20 @@
                                                 </ul>
                                             </div>
                                         </td>
-                                    </tr>   
+                                    </tr> 
+                                    <tr class="gradeX" data-key="{{$item->id}}">
+                                        <td>{{ $item->titreEn ?? "" }}</td>
+                                        <td>{{ substr($item->descriptionEn,0,50).'...' ?? "" }}</td>
+                                    </tr>  
                                     @endforeach                
                                 </tbody>
                                 <tfoot>
                                     <tr>
-                                        <th>Photo</th><th>Titre</th><th>Description</th><th>Date</th><th><i class="fa fa-wrench"></i></th>
+                                        <th>Photo</th>
+                                        <th>Titre</th>
+                                        <th>Description</th>
+                                        <th>Date</th>
+                                        <th><i class="fa fa-wrench"></i></th>
                                     </tr>
                                 </tfoot>
                             </table>

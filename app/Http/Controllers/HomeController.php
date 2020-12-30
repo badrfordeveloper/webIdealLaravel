@@ -314,7 +314,7 @@ class HomeController extends Controller
     }
 
 
-    public function detailArticle($id,$titre,$locale = "fr")
+    public function detailArticle($locale = "fr",$id,$titre)
 
     {
 
@@ -323,7 +323,6 @@ class HomeController extends Controller
            abort(404);
 
         }
-
         app()->setLocale($locale);
 
         $post = Post::where('id', '=', $id)->where("titre","=",$titre)->firstOrFail();
