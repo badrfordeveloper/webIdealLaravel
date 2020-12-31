@@ -35,14 +35,14 @@
     <div class="col-md-6">
         <div class="form-group {{ $errors->has('content') ? 'has-error' : ''}}">
             <label for="content" class="control-label">{{ 'Content Francais' }}</label>
-            <textarea class="form-control" rows="5" name="content" type="textarea" id="content" >{{ isset($post->content) ? $post->content : ''}}</textarea>
+            <textarea class="form-control description" rows="5" name="content" type="textarea" id="content" >{{ isset($post->content) ? $post->content : ''}}</textarea>
             {!! $errors->first('content', '<p class="help-block">:message</p>') !!}
         </div>
     </div>
     <div class="col-md-6">
         <div class="form-group {{ $errors->has('contentEn') ? 'has-error' : ''}}">
             <label for="contentEn" class="control-label">{{ 'Content Anglais' }}</label>
-            <textarea class="form-control" rows="5" name="contentEn" type="textarea" id="contentEn" >{{ isset($post->contentEn) ? $post->contentEn : ''}}</textarea>
+            <textarea class="form-control description" rows="5" name="contentEn" type="textarea" id="contentEn" >{{ isset($post->contentEn) ? $post->contentEn : ''}}</textarea>
             {!! $errors->first('contentEn', '<p class="help-block">:message</p>') !!}
         </div>
     </div>
