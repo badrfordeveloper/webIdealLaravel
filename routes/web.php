@@ -109,7 +109,7 @@ Route::group(['middleware' => ['web']], function () {
     
     Route::get('blog','HomeController@blog')->name('blog');
 
-    Route::get('fr/blog/{locale}/{id}/{titre}','HomeController@detailArticle')->name('detailArticle');
+    Route::get('{locale}/articles/{id}/{titre}','HomeController@detailArticle')->name('detailArticle');
 
     Route::get('/creation-des-applications-web-a-casablanca','HomeController@web_application')->name('web_application');
     Route::get('/creation-des-sites-web-a-casablanca','HomeController@sites_web')->name('sites_web');
@@ -129,7 +129,7 @@ Route::group(['middleware' => ['web']], function () {
 
     Route::get('{locale}/blog','HomeController@blog')->name('blogEn');
 
-    Route::get('en/blog/{locale}/{id}/{titre}','HomeController@detailArticle')->name('detailArticleEn');
+    Route::get('{locale}/posts/{id}/{titre}','HomeController@detailArticle')->name('detailArticleEn');
 
     Route::get('{locale}/creation-of-web-applications-in-casablanca','HomeController@web_application')->name('web_applicationEn');
     Route::get('{locale}/creation-of-websites-in-casablanca','HomeController@sites_web')->name('sites_webEn');

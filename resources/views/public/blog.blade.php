@@ -88,15 +88,15 @@
                         <!-- start post item --> 
                         <div class="blog-post-content d-flex align-items-center flex-wrap margin-60px-bottom padding-60px-bottom border-bottom border-color-extra-light-gray md-margin-30px-bottom md-padding-30px-bottom text-center text-md-left md-no-border">
                             <div class="col-12 col-lg-5 blog-image p-0 md-margin-30px-bottom sm-margin-20px-bottom margin-45px-right md-no-margin-right">
-                                <a href="{{ (app()->getLocale() == 'en') ? route('detailArticleEn', ['id'=>$post->id,'titre' =>$post->titre,'locale' => app()->getLocale()]) : route('detailArticle', ['locale' => 'fr','id'=>$post->id,'titre' =>$post->titre]) }}"><img src="@if($post->photo) {{asset('storage/'.$post->photo)}} @else {{asset('assets/images/default.png')}} @endif" alt="{{ $post->titre }}" ></a>
+                                <a href="{{ (app()->getLocale() == 'en') ? route('detailArticleEn', ['id'=>$post->id,'titre' =>$post->titreEn,'locale' => app()->getLocale()]) : route('detailArticle', ['locale' => 'fr','id'=>$post->id,'titre' =>$post->titre]) }}"><img src="@if($post->photo) {{asset('storage/'.$post->photo)}} @else {{asset('assets/images/default.png')}} @endif" alt="{{ (app()->getLocale() == 'en') ? $post->titreEn : $post->titre  }}" ></a>
                             </div>
                             <div class="col-12 col-lg-6 blog-text p-0">
                                 <div class="content margin-20px-bottom md-no-padding-left ">
-                                    <a href="{{ (app()->getLocale() == 'en') ? route('detailArticleEn', ['id'=>$post->id,'titre' =>$post->titre,'locale' => app()->getLocale()]) : route('detailArticle', ['locale' =>'fr','id'=>$post->id,'titre' =>$post->titre]) }}" class="text-extra-dark-gray margin-5px-bottom alt-font text-extra-large font-weight-600 d-inline-block">{{ (app()->getLocale() == 'en') ? $post->titreEn : $post->titre  }}</a>
+                                    <a href="{{ (app()->getLocale() == 'en') ? route('detailArticleEn', ['id'=>$post->id,'titre' =>$post->titreEn,'locale' => app()->getLocale()]) : route('detailArticle', ['locale' =>'fr','id'=>$post->id,'titre' =>$post->titre]) }}" class="text-extra-dark-gray margin-5px-bottom alt-font text-extra-large font-weight-600 d-inline-block">{{ (app()->getLocale() == 'en') ? $post->titreEn : $post->titre  }}</a>
                                     <div class="text-medium-gray text-extra-small margin-15px-bottom text-uppercase alt-font"><span>{{ date('Y-m-d', strtotime($post->created_at)) }}</span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="blog-grid.html" class="text-medium-gray">{{ $post->categorie->libelle }}</a></div>
                                     <p class="m-0 width-95">{{  (app()->getLocale() == 'en') ? substr($post->descriptionEn,0,155).'...' :  substr($post->description,0,155).'...' }}</p>
                                 </div>
-                                <a class="btn btn-very-small btn-dark-gray text-uppercase" href="{{ (app()->getLocale() == 'en') ? route('detailArticleEn', ['id'=>$post->id,'titre' =>$post->titre,'locale' => app()->getLocale()]) : route('detailArticle', ['locale' =>'fr','id'=>$post->id,'titre' =>$post->titre]) }}">Voir Plus</a>
+                                <a class="btn btn-very-small btn-dark-gray text-uppercase" href="{{ (app()->getLocale() == 'en') ? route('detailArticleEn', ['id'=>$post->id,'titre' =>$post->titreEn,'locale' => app()->getLocale()]) : route('detailArticle', ['locale' =>'fr','id'=>$post->id,'titre' =>$post->titre]) }}">Voir Plus</a>
                             </div>
                         </div>
                         <!-- end post item -->  

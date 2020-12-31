@@ -325,7 +325,14 @@ class HomeController extends Controller
         }
         app()->setLocale($locale);
 
-        $post = Post::where('id', '=', $id)->where("titre","=",$titre)->firstOrFail();
+        if ($locale == "fr")
+         {
+            $post = Post::where('id', '=', $id)->where("titre","=",$titre)->firstOrFail();
+        } else {
+            $post = Post::where('id', '=', $id)->where("titreEn","=",$titre)->firstOrFail();
+        }
+        
+
 
 
 

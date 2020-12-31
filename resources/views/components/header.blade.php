@@ -106,7 +106,7 @@
                                            <?php 
                                             $route=Request::route()->getName().'En' ?? '';
                                             if($route=="detailArticleEn"){
-                                                echo  route($route, ['locale' => "en",'id'=>$post->id ,'titre' => $post->titre ]);
+                                                echo  route($route, ['locale' => "en",'id'=>$post->id ,'titre' => $post->titreEn ]);
                                             }
                                             else{
                                                 echo  route($route, ['locale' => "en"]);
@@ -186,7 +186,7 @@
                                             <?php 
                                                 $route=Request::route()->getName().'En';
                                                 if($route=="detailArticleEn"){
-                                                 echo  route($route, ['locale' => "en",'id'=>$post->id ,'titre' => $post->titre ]);
+                                                 echo  route($route, ['locale' => "en",'id'=>$post->id ,'titre' => $post->titreEn ]);
                                                     }
                                                 else{
                                                         echo  route($route, ['locale' => "en"]);
