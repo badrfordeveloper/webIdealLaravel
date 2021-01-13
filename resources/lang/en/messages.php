@@ -65,7 +65,7 @@ return [
 
     'section-about-p1' => 'We are a team of expert, creative and dynamic IT specialists based in Casablanca who will offer you <strong> professional services in the design and <a class="bold" href="'. route('sites_webEn', ['locale' => $lang]) .'"> creation  of  websites</a> and <a class="bold" href="'. route('web_applicationEn', ['locale' => $lang]) .'"> web applications. </a> </strong>',
 
-	'section-about-p2' => 'Our goal is the satisfaction of all our customers, and to put all our know-how to support you towards success in your IT projects ',
+ 'section-about-p2' => 'Our goal is the satisfaction of all our customers, and to put all our know-how to support you towards success in your IT projects ',
 
     'section-about-service1' => '<a class="bold" href="'. route('sites_webEn', ['locale' => $lang]) .'"> Creating websites </a>',
 
@@ -99,7 +99,7 @@ return [
 
 
 
-	'section-services-part4-title' => ' Graphic design ',
+ 'section-services-part4-title' => ' Graphic design ',
 
     'section-services-part4-p' => ' The logo or logotype is the basis of your visual identity. It’s your logo that gives the image of your company and it’s the first thing you see of your business. ',
 
@@ -203,7 +203,7 @@ return [
 
     'section-Testimonials-part1-p' => '  A big thank you to you for their responsiveness and the quality of their services offered. What I appreciate is the professionalism and attentiveness shown by your team, all in a professional and friendly spirit. ',
 
-    'section-Testimonials-part1-user' => ' Shoko Mugikura ',
+    'section-Testimonials-part1-user' => ' Abdessamed Chaoui ',
 
     'section-Testimonials-part1-job' => ' Graphic Designer ',
 
@@ -211,7 +211,7 @@ return [
 
     'section-Testimonials-part2-p' => '  Hello, this is exactly what I expected. I only have one word to say: SUPER WORK. You can put the combinations into production! I want to sincerely thank you for your great responsiveness this proposal. ',
 
-    'section-Testimonials-part2-user' => ' Alexander Harvard ',
+    'section-Testimonials-part2-user' => ' Oussama Kamal ',
 
     'section-Testimonials-part2-job' => ' Creative Director ',
 
@@ -219,7 +219,7 @@ return [
 
     'section-Testimonials-part3-p' => ' I would like to warmly thank your team because they have always shown themselves to be reactive and an artistic spirit worthy of the greatest. Your precious advice has been a great help to us and we would like to ask you much more often. ',
 
-    'section-Testimonials-part3-user' => ' Herman Miller ',
+    'section-Testimonials-part3-user' => ' Mohamed Ben-lhamdaoui ',
 
     'section-Testimonials-part3-job' => ' Co Founder / CEO ',
 
@@ -397,7 +397,7 @@ return [
 
     'services-section-process-part2-title'=>'Développement',
 
-    'services-section-process-part2-p'=>'Lorem Ipsum is simply text the printing and typesetting standard industry.',
+    'services-section-process-part2-p'=>'tailor-made development for the complexity of the projects and its technical feasibility.',
 
 
 
@@ -415,7 +415,7 @@ return [
 
     'services-section-process-part5-title'=>'Maintenance',
 
-    'services-section-process-part5-p'=>'Lorem Ipsum is simply text the printing and typesetting standard industry.',
+    'services-section-process-part5-p'=>'It can take a week sometimes to put your site under all the planned browsers and test the functions, the displays, then correct the discrepancies ...',
 
 
 
@@ -451,7 +451,7 @@ return [
 
     'contact-section-info-part3-title' => 'E-mail',
 
-    'contact-section-info-part3-p' => 'web.ideal.maroc@gmail.com',
+    'contact-section-info-part3-p' => 'contact@websites-ideal.com <br /> web.ideal.maroc@gmail.com',
 
 
 
@@ -608,6 +608,10 @@ return [
     'title-webapplication-page' =>"Create web applications in Casablanca",
 
     'description-webapplication-page' => 'Web Ideal specialized in the creation of web applications in Casablanca, which meet the needs of each project, whatever your job and in different languages.',
+
+
+    'services-section-etapes-title' =>"The steps of creating websites and web applications",
+     
 
 
 

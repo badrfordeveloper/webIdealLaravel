@@ -27,31 +27,31 @@ return [
 
     // slider
 
-	'slide1-our-services' => ' Nos Services',
+ 'slide1-our-services' => ' Nos Services',
 
 
 
-	'slide1-part1' => ' PROFITER D\'UNE SOLUTION WEB ',
+ 'slide1-part1' => ' PROFITER D\'UNE SOLUTION WEB ',
 
-	'slide1-part2' => ' ADAPTÉE À VOS BESOINS ',
+ 'slide1-part2' => ' ADAPTÉE À VOS BESOINS ',
 
-	'slide1-part3' => ' GRÂCE À LA CRÉATIVITÉ ',
-
-
-
-	'slide2-part1' => ' Nous proposons des solutions innovantes ',
-
-	'slide2-part2' => ' POUR MENEZ VOTRE BUSINESS ',
-
-	'slide2-part3' => ' AU PROCHAIN NIVEAU ! ',
+ 'slide1-part3' => ' GRÂCE À LA CRÉATIVITÉ ',
 
 
 
-	'slide3-part1' => ' CRÉEZ UN SITE INTERNET À VOTRE IMAGE ',
+ 'slide2-part1' => ' Nous proposons des solutions innovantes ',
 
-	'slide3-part2' => ' FACILE À PRENDRE EN MAIN, ',
+ 'slide2-part2' => ' POUR MENEZ VOTRE BUSINESS ',
 
-	'slide3-part3' => '  MODERNE ET SÉCURISÉ ',
+ 'slide2-part3' => ' AU PROCHAIN NIVEAU ! ',
+
+
+
+ 'slide3-part1' => ' CRÉEZ UN SITE INTERNET À VOTRE IMAGE ',
+
+ 'slide3-part2' => ' FACILE À PRENDRE EN MAIN, ',
+
+ 'slide3-part3' => '  MODERNE ET SÉCURISÉ ',
 
     // section about 
 
@@ -59,7 +59,7 @@ return [
 
        'section-about-p1' => 'Nous sommes une équipe des informaticiens expert, créative, et dynamique basé à Casablanca qui vont vous offrir des services professionnels dans <strong> la conception et <a class="bold" href="'. route('sites_web') .'"> la création des sites Internet </a> et <a class="bold" href="'. route('web_application') .'"> des applications web.</a> </strong>',
  
-	'section-about-p2' => 'Notre objectif est la satisfaction de tous nos clients, et de mettre tous nos savoir-faire pour vous accompagner vers la réussite dans de vos projets informatiques ',
+ 'section-about-p2' => 'Notre objectif est la satisfaction de tous nos clients, et de mettre tous nos savoir-faire pour vous accompagner vers la réussite dans de vos projets informatiques ',
 
     'section-about-service1' => '<a class="bold" href="'. route('sites_web') .'"> Création des sites internet </a>',
 
@@ -93,7 +93,7 @@ return [
 
 
 
-	'section-services-part4-title' => ' Conception Graphique ',
+ 'section-services-part4-title' => ' Conception Graphique ',
 
     'section-services-part4-p' => ' Le logo ou logotype est la base de votre identité visuelle. C’est votre logo qui donne l’image de votre société et c’est la première chose que l’on voit de votre entreprise.',
 
@@ -199,7 +199,7 @@ return [
 
     'section-Testimonials-part1-p' => '  Un grand merci à vous pour leur réactivité et la qualité de leurs prestations proposées. Ce que j’apprécie, c’est le professionnalisme et l’écoute dont fait preuve votre équipe, le tout dans un esprit pro et amical. ',
 
-    'section-Testimonials-part1-user' => ' Shoko Mugikura ',
+    'section-Testimonials-part1-user' => ' Abdessamed Chaoui  ',
 
     'section-Testimonials-part1-job' => ' Graphic Designer ',
 
@@ -207,7 +207,7 @@ return [
 
     'section-Testimonials-part2-p' => '  Bonjour, c’est exactement ce que j’attendais. Je n ‘ai qu’un mot à dire : SUPER TRAVAIL. Vous pouvez mettre en production les déclinaisons ! Je tiens à vous remercier sincèrement pour votre très grande réactivité cette proposition. ',
 
-    'section-Testimonials-part2-user' => ' Alexander Harvard ',
+    'section-Testimonials-part2-user' => ' Oussama Kamal ',
 
     'section-Testimonials-part2-job' => ' Creative Director ',
 
@@ -215,7 +215,7 @@ return [
 
     'section-Testimonials-part3-p' => ' Je tiens à vivement remercier votre équipe car elle a su à chaque fois faire preuve de réactivité et d’un esprit artistique digne des plus grands.Vos précieux conseils nous ont été d’une grande aide et nous souhaiterions vous solliciter bien plus souvent. ',
 
-    'section-Testimonials-part3-user' => ' Herman Miller ',
+    'section-Testimonials-part3-user' => ' Mohamed Ben-lhamdaoui ',
 
     'section-Testimonials-part3-job' => ' Co Founder / CEO ',
 
@@ -393,7 +393,7 @@ return [
 
     'services-section-process-part2-title'=>'Développement',
 
-    'services-section-process-part2-p'=>'Lorem Ipsum is simply text the printing and typesetting standard industry.',
+    'services-section-process-part2-p'=>'Développement sur mesure pour la complexité du projet et sa faisabilité technique.',
 
 
 
@@ -411,7 +411,7 @@ return [
 
     'services-section-process-part5-title'=>'Maintenance',
 
-    'services-section-process-part5-p'=>'Lorem Ipsum is simply text the printing and typesetting standard industry.',
+    'services-section-process-part5-p'=>'Cela peut prendre une semaine parfois pour faire passer votre site sous tous les navigateurs prévus et tester les fonctions, les affichages, puis corriger les écarts ...',
 
 
 
@@ -449,7 +449,7 @@ return [
 
     'contact-section-info-part3-title' => 'E-mail',
 
-    'contact-section-info-part3-p' => 'web.ideal.maroc@gmail.com',
+    'contact-section-info-part3-p' => 'contact@websites-ideal.com <br /> web.ideal.maroc@gmail.com',
 
 
 
@@ -597,11 +597,7 @@ return [
 
     'description-webapplication-page' => 'Web Ideal spécialisées en la création des applications web à Casablanca ,qui répondent au besoin de chaque projet.quel que soit votre métier et sous différents langages, gestion de stock , gestion Rendez-vous , Application sur mesure ',
 
-    
-
-
-
-    
+     'services-section-etapes-title' =>"Les étapes de la création des sites et applications Web",
 
     //footer 
 

@@ -1,8 +1,8 @@
 <!-- start footer --> 
 
-<footer class="footer-classic-dark bg-extra-dark-gray padding-five-bottom sm-padding-30px-bottom">
+<footer class="footer-classic-dark bg-extra-dark-gray sm-padding-30px-bottom">
 
-            <div class="bg-dark-footer padding-50px-tb sm-padding-30px-tb">
+            <div class="bg-dark-footer sm-padding-30px-tb">
 
                 <div class="container">
 
@@ -10,7 +10,7 @@
 
                         <!-- start slogan -->
 
-                        <div class="col-lg-4 col-md-5 text-center alt-font sm-margin-15px-bottom">
+                        <div class="col-lg-4 col-md-5 text-center alt-font sm-margin-15px-bottom" style=" color: white;">
 
                             Websites Ideal 
 
@@ -62,7 +62,7 @@
 
             <div class="container">
 
-                <div class="footer-bottom border-top border-color-medium-dark-gray padding-30px-top">
+                <div class="footer-bottom border-top border-color-medium-dark-gray " style="padding: 10px;">
 
                     <div class="row">
 
