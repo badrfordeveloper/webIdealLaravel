@@ -6,6 +6,45 @@
 
         
          {{ $css ?? "" }}
+               <style type="text/css">
+
+    .float{
+
+  position:fixed;
+
+  width:60px;
+
+  height:60px;
+
+  bottom:20px;
+
+  left:20px;
+
+  background-color:#25d366;
+
+  color:#FFF;
+
+  border-radius:50px;
+
+  text-align:center;
+
+  font-size:30px;
+
+  box-shadow: 2px 2px 2px #686666;
+
+  z-index:100;
+
+}
+
+
+
+.my-float{
+
+  margin-top:16px;
+
+}
+
+</style>
          
          <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-177863907-1"></script>
@@ -25,6 +64,12 @@
     <x-footer />
         <!-- start scroll to top -->
         <a class="scroll-top-arrow" href="javascript:void(0);"><i class="fas fa-arrow-circle-up" style="    font-size: 27px;"></i></a>
+          <a href="https://api.whatsapp.com/send?phone=212644812420" class="float" target="_blank">
+
+<!-- <i class="fa fa-whatsapp my-float"></i> -->
+<i class="fab fa-whatsapp my-float"></i>
+
+</a>
         <!-- end scroll to top  -->
         <!-- javascript libraries -->
      

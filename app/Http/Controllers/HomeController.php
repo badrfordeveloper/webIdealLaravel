@@ -120,7 +120,6 @@ class HomeController extends Controller
      
     public function sendForm(Request $request,$locale = "fr")
     {
-
         if (! in_array($locale, ['en' , 'fr'])) {
 
            abort(404);
@@ -129,28 +128,46 @@ class HomeController extends Controller
 
         app()->setLocale($locale);
 
-    	$name = $request->input('name');
-    	$email = $request->input('email');
-    	$phone = $request->input('phone');
-    	$subject = $request->input('subject');
-    	$comment = $request->input('comment');
+        function getCaptcha($SecretKey){
+            $SECRET_KEY='6LcagDQaAAAAACuEQvYpjqFzv2KbjYcYkqQkrJMf';
+            $Response = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=".$SECRET_KEY."&response={$SecretKey}");
+            $Return = json_decode($Response);
+            return $Return;
+        }
+        $Return = getCaptcha($request->input('g-recaptcha-response'));
+        dd($Return);
+        if($Return->success == true && $Return->score > 0.5){
 
-    	$details = [
-        "title" =>"Message de Contactez nous - WEB IDEAL",
-        "name" =>$name,
-        "email" =>$email,
-        "phone" =>$phone,
-        "subject" =>$subject,
-        "comment" =>$comment
-   		 ];
+            $name = $request->input('name');
+            $email = $request->input('email');
+            $phone = $request->input('phone');
+            $subject = $request->input('subject');
+            $comment = $request->input('comment');
+
+            $details = [
+            "title" =>"Message de Contactez nous - WEB IDEAL",
+            "name" =>$name,
+            "email" =>$email,
+            "phone" =>$phone,
+            "subject" =>$subject,
+            "comment" =>$comment
+             ];
+            
+            \Mail::to("web.ideal.maroc@gmail.com")->send(new \App\Mail\MailContact($details));
+
+            if ($locale =="fr") {
+                return redirect()->route('contact')->with('flash_message', 'Message envoyé avec Succès !');
+            } else {
+                return redirect()->route('contact')->with('flash_message', 'Message sent successfully !');
+            }
+
+
+        }else{
+            return redirect()->route('contact')->with('error', 'You are a Robot!!!');
+          
+        }
+
     	
-    	\Mail::to("web.ideal.maroc@gmail.com")->send(new \App\Mail\MailContact($details));
-
-    	if ($locale =="fr") {
-    		return redirect()->route('contact')->with('flash_message', 'Message envoyé avec Succès !');
-    	} else {
-    		return redirect()->route('contact')->with('flash_message', 'Message sent successfully !');
-    	}
     	
 
 
