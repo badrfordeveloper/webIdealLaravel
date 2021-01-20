@@ -135,7 +135,7 @@ class HomeController extends Controller
             return $Return;
         }
         $Return = getCaptcha($request->input('g-recaptcha-response'));
-        dd($Return);
+       /* dd($Return);*/
         if($Return->success == true && $Return->score > 0.5){
 
             $name = $request->input('name');
